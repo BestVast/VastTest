@@ -50,5 +50,10 @@
         _stateIv.backgroundColor = [UIColor grayColor];
     }
 }
+- (void)animateAffine {
+    self.transform = CGAffineTransformMakeRotation(M_PI_2);
+    self.transform = CGAffineTransformTranslate(self.transform, 0.2, 0.2);
+    self.contentView.backgroundColor = [UIColor colorWithRed:(arc4random() % 255) / 255.0 green:(arc4random() % 255) / 255.0 blue:(arc4random() % 255) / 255.0 alpha:1.0f];
+}
 
 @end

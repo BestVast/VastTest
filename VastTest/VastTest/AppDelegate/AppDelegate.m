@@ -18,6 +18,11 @@
     // Override point for customization after application launch.
     NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler); // 该函数可在任务未知调用。
     InstallSignalHandler();
+    
+#if DEBUG
+    // iOS
+    [[NSBundle bundleWithPath:@"/Applications/InjectionIII.app/Contents/Resources/iOSInjection.bundle"] load];
+#endif
     return YES;
 }
 

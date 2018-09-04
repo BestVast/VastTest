@@ -26,7 +26,7 @@
     
 }
 
-
+#pragma mark ==UICollectionViewDelegate==
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return self.dataSource.count;
 }
@@ -34,6 +34,18 @@
     GTagCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
     return cell;
 }
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    GTagCollectionViewCell *cell = (GTagCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
+    cell.title = [NSString stringWithFormat:@"%ld", indexPath.row];
+    [UIView animateWithDuration:2.0f animations:^{
+        
+        [cell animateAffine];
+    } completion:^(BOOL finished) {
+        [self.dataSource removeObjectAtIndex:indexPath.row];
+        [collectionView reloadData];
+    }];
+}
+#pragma mark ==UICollectionView setter==
 - (UICollectionView *)collectionView {
     if (!_collectionView) {
         UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];

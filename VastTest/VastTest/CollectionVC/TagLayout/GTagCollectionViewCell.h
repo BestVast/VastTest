@@ -11,4 +11,5 @@
 @interface GTagCollectionViewCell : UICollectionViewCell
 @property (nonatomic, copy)     NSString *title;
 @property (nonatomic, assign)   TagCellState cellState;
+- (void)animateAffine;
 @end

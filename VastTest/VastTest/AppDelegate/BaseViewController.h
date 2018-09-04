@@ -11,7 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BaseViewController : UIViewController
-
+// 返回上一层
+- (void)backUpper;
 @end
 
 NS_ASSUME_NONNULL_END

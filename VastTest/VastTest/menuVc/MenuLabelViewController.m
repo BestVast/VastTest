@@ -7,9 +7,10 @@
 //
 
 #import "MenuLabelViewController.h"
-
+#import "Masonry.h"
 @interface MenuLabelViewController ()
-
+@property (nonatomic, strong) UIStackView *stackView;
+@property (nonatomic, strong) UIImageView *pasteIv; // 粘贴图片
 @end
 
 @implementation MenuLabelViewController
@@ -28,10 +29,43 @@
     [self.view addSubview:menuLabel];
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(clickMenu:)];
     [menuLabel addGestureRecognizer:tap];
+    [self addStackView];
+}
+- (void)addStackView {
+    if (self.stackView) {
+        [self.stackView removeFromSuperview];
+        [self.view addSubview:self.stackView];
+        [self.stackView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.centerX.equalTo(self.view.mas_centerX);
+            make.centerY.equalTo(self.view.mas_centerY);
+            make.leading.equalTo(self.view.mas_leading).offset(20);
+            make.trailing.equalTo(self.view.mas_trailing).offset(-20);
+            make.height.equalTo(@100);
+        }];
+    }
+    NSInteger count = 3;
+    if (_stackView.arrangedSubviews.count > 0) {
+        count = _stackView.arrangedSubviews.count;
+        for (UIView *view in _stackView.arrangedSubviews) {
+            [_stackView removeArrangedSubview:view];
+        }
+    }
+    count ++;
+    for (NSInteger i = 0; i < count; i++) {
+        UIView * newView = [[UIView alloc]init];
+        newView.backgroundColor = [UIColor colorWithRed:arc4random()%255/255.0 green:arc4random()%255/255.0 blue:arc4random()%255/255.0 alpha:1];
+        [newView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.height.equalTo(@100);
+            make.width.equalTo(@50);
+        }];
+        [self.stackView addArrangedSubview:newView];
+    }
 }
 
+- (void)injected {
+     [self addStackView];
+}
 - (void)clickMenu:(UITapGestureRecognizer *)tap {
-    //    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     UILabel *view = (UILabel *)[tap view];
     CGPoint point = [tap locationInView:view];
     DLog(@"PointX->%f \nPointY->%f", point.x, point.y)
@@ -71,21 +105,45 @@
 
 - (void)clickCopy {
     DLog(@"clickCopy");
+    UIPasteboard *paste = [UIPasteboard generalPasteboard];
+//    [paste setString:@"clickCopy"]; 
+    [paste setImage:[UIImage imageNamed:@"MVC1.png"]];
 }
 - (void)clickDelete {
     DLog(@"clickDelete");
+    if (_pasteIv) {
+        [_pasteIv removeFromSuperview];
+        _pasteIv = nil;
+    }
 }
 - (void)paste:(UIMenuItem *)menuItem {
-    
+    UIPasteboard *paste = [UIPasteboard generalPasteboard];
+    if ([paste image]) {
+        if (!_pasteIv) {
+            [self.view addSubview:self.pasteIv];
+        }
+        self.pasteIv.image = [paste image];
+    }
 }
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+// https://blog.csdn.net/GGGHub/article/details/49251449
+- (UIStackView *)stackView {
+    if (!_stackView) {
+        _stackView = [[UIStackView alloc] init];
+                      //WithFrame:CGRectMake(0, 185 + 30, SCREEN_WIDTH, 120)];
+        _stackView.axis = UILayoutConstraintAxisHorizontal;
+        _stackView.distribution = UIStackViewDistributionFillEqually;
+        _stackView.spacing = 10;
+        _stackView.alignment = UIStackViewAlignmentCenter;
+        _stackView.backgroundColor = [UIColor cyanColor];
+    }
+    return _stackView;
 }
-*/
-
+- (UIImageView *)pasteIv {
+    if (!_pasteIv) {
+        _pasteIv = [[UIImageView alloc] initWithFrame:CGRectMake(10, 190, 200, 150)];
+        
+    }
+    return _pasteIv;
+}
 @end

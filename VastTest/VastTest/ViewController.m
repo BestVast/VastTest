@@ -112,4 +112,10 @@
     return 64;
 }
 
+- (void)injected {
+    //在这里面写的代码才能看效果  写完后 command + s 就出效果了
+    
+    self.view.backgroundColor=[UIColor blueColor];
+}
+
 @end

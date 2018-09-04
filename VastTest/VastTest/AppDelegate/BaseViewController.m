@@ -27,7 +27,13 @@
     }
 }
 - (void)backUpper {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    if (self.navigationController.viewControllers
+        && ![self.navigationController.viewControllers.firstObject isEqual:self]) {
+        
+        [self.navigationController popViewControllerAnimated:YES];
+    } else {
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }
 }
 /*
 #pragma mark - Navigation
