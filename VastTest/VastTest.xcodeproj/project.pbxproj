@@ -52,6 +52,7 @@
 		FD25932421105CE500014FC6 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD25930E21105CE500014FC6 /* AFSecurityPolicy.m */; };
 		FD2A5D79211C3F92004A875B /* VastCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2A5D78211C3F92004A875B /* VastCollectionViewController.m */; };
 		FD2A5D7C211C4033004A875B /* GTagCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2A5D7B211C4033004A875B /* GTagCollectionViewCell.m */; };
+		FD2BB216213FD31D00FB6A38 /* VastTableViewProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2BB215213FD31D00FB6A38 /* VastTableViewProtocol.m */; };
 		FD2C0A4B211299EB00ADAEC9 /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2C0A4A211299EB00ADAEC9 /* LoginViewModel.m */; };
 		FD2C0A4E211299F500ADAEC9 /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2C0A4D211299F500ADAEC9 /* LoginModel.m */; };
 		FD2C0A542112E80E00ADAEC9 /* MVVM3.png in Resources */ = {isa = PBXBuildFile; fileRef = FD2C0A4F2112E80E00ADAEC9 /* MVVM3.png */; };
@@ -171,6 +172,8 @@
 		FD2A5D78211C3F92004A875B /* VastCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VastCollectionViewController.m; sourceTree = "<group>"; };
 		FD2A5D7A211C4033004A875B /* GTagCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTagCollectionViewCell.h; sourceTree = "<group>"; };
 		FD2A5D7B211C4033004A875B /* GTagCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTagCollectionViewCell.m; sourceTree = "<group>"; };
+		FD2BB214213FD31D00FB6A38 /* VastTableViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VastTableViewProtocol.h; sourceTree = "<group>"; };
+		FD2BB215213FD31D00FB6A38 /* VastTableViewProtocol.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VastTableViewProtocol.m; sourceTree = "<group>"; };
 		FD2C0A49211299EB00ADAEC9 /* LoginViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewModel.h; sourceTree = "<group>"; };
 		FD2C0A4A211299EB00ADAEC9 /* LoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
 		FD2C0A4C211299F500ADAEC9 /* LoginModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginModel.h; sourceTree = "<group>"; };
@@ -266,6 +269,8 @@
 				FD5A769F21181FCC00699CED /* AppDelegate */,
 				FD1BF2082106C385001141AB /* ViewController.h */,
 				FD1BF2092106C385001141AB /* ViewController.m */,
+				FD2BB214213FD31D00FB6A38 /* VastTableViewProtocol.h */,
+				FD2BB215213FD31D00FB6A38 /* VastTableViewProtocol.m */,
 				FD9F2ACC21199C240030DF6A /* CollectionVC */,
 				FD9F2ACB21199C0F0030DF6A /* DrawVC */,
 				FD97BC002111539300A1500E /* MVVM */,
@@ -683,6 +688,7 @@
 				FD25932221105CE500014FC6 /* AFURLRequestSerialization.m in Sources */,
 				FD865DAD213E256A0098A852 /* MASViewAttribute.m in Sources */,
 				FD25931B21105CE500014FC6 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				FD2BB216213FD31D00FB6A38 /* VastTableViewProtocol.m in Sources */,
 				FDDE7A562110624600BBA0E3 /* ListDetailViewController.m in Sources */,
 				FD389E0521212350008CCA07 /* VastCatchCrash.m in Sources */,
 				FD865DAB213E256A0098A852 /* MASConstraint.m in Sources */,

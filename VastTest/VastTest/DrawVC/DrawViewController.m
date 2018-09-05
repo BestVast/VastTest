@@ -20,6 +20,22 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     NSLog(@"start !");
+    [self uiConfig];
+}
+
+- (void)uiConfig {
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = CGRectMake(10, 100, 300, 700);
+    [btn setTitle:@"MVVM1" forState:UIControlStateNormal];
+    [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [self.view addSubview:btn];
+    [btn setImage:[UIImage imageNamed:@"MVVM1.png"] forState:UIControlStateNormal];
+    btn.imageView.contentMode = UIViewContentModeScaleAspectFit;
+}
+
+
+
+- (void)globalTest {
     isSucc = YES;
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         while (self->isSucc) {
@@ -34,7 +50,6 @@
 }
 - (void)dealloc {
     DLog(@"dealloc");
-    
 }
 
 
