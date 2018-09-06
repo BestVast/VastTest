@@ -31,7 +31,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.dataSource = [[NSMutableArray alloc] initWithArray:@[@"登录页面MVVM", @"弹框页面", @"MenuViewController", @"Match", @"FMDB", @"Draw", @"RegularCollection", @"FlowCollection", @"ClassifyLabelView", @"HorizontalCollection"]];
+    self.dataSource = [[NSMutableArray alloc] initWithArray:@[@"登录页面MVVM", @"弹框页面", @"MenuViewAndUIStackView", @"Match", @"FMDB", @"Draw", @"RegularCollection", @"FlowCollection", @"ClassifyLabelView", @"HorizontalCollection"]];
     //[match](https://www.jianshu.com/p/2b599fc55011)
     [self uiConfig];
 }
@@ -60,41 +60,32 @@
 }
 
 - (void)selectCellCallback:(NSIndexPath *)indexPath {
+    NSString *className;
     if (indexPath.row == 0) {
-        LoginViewController *listVc = [[LoginViewController alloc] init];
-        UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController: listVc];
-        [self presentViewController:navi animated:YES completion:nil];
+        className = @"LoginViewController";
     } else if (indexPath.row == 1) {
+//        className = @"LoginViewController";
         ShowViewController *showVc = [[ShowViewController alloc] init];
         showVc.modalPresentationStyle = UIModalPresentationOverCurrentContext | UIModalPresentationFullScreen;
         [self presentViewController:showVc animated:YES completion:nil];
-    } else if (indexPath.row == 2) {
-        MenuLabelViewController *listVc = [[MenuLabelViewController alloc] init];
-        UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController: listVc];
-        [self presentViewController:navi animated:YES completion:nil];
+        return;
+    } else if ([self.dataSource[indexPath.row] isEqualToString:@"MenuViewAndUIStackView"]) {
+        className = @"MenuLabelViewController";
     } else if ([self.dataSource[indexPath.row] isEqualToString:@"Draw"]) {
-        DrawViewController *drawVc = [[DrawViewController alloc] init];
-        UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:drawVc];
-        [self presentViewController:navi animated:YES completion:nil];
+        className = @"DrawViewController";
     } else if ([self.dataSource[indexPath.row] isEqualToString:@"RegularCollection"]) {
-        VastCollectionViewController *vastVc = [[VastCollectionViewController alloc] init];
-        UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:vastVc];
-        [self presentViewController:navi animated:YES completion:nil];
+        className = @"VastCollectionViewController";
     } else if ([self.dataSource[indexPath.row] isEqualToString:@"FlowCollection"]) {
-        FlowCollectionViewController *vastVc = [[FlowCollectionViewController alloc] init];
-        UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:vastVc];
-        [self presentViewController:navi animated:YES completion:nil];
+        className = @"FlowCollectionViewController";
     } else if ([self.dataSource[indexPath.row] isEqualToString:@"ClassifyLabelView"]) {
-        ClassifyLabelViewController *vastVc = [[ClassifyLabelViewController alloc] init];
-        UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:vastVc];
-        [self presentViewController:navi animated:YES completion:nil];
+        className = @"ClassifyLabelViewController";
     } else if ([self.dataSource[indexPath.row] isEqualToString:@"HorizontalCollection"]) {
-        HorizontalCollectionViewController *vastVc = [[HorizontalCollectionViewController alloc] init];
-        UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:vastVc];
-        [self presentViewController:navi animated:YES completion:nil];
-    } else if ([self.dataSource[indexPath.row] isEqualToString:@"Draw"]) {
-        DrawViewController *vastVc = [[DrawViewController alloc] init];
-        UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:vastVc];
+        className = @"HorizontalCollectionViewController";
+    }
+    if (className && className.length) {
+        Class class = NSClassFromString(className);
+        UIViewController *listVc = [[class alloc] init];
+        UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController: listVc];
         [self presentViewController:navi animated:YES completion:nil];
     }
 }

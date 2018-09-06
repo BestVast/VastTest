@@ -247,6 +247,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FD1BB63421410D6C00A54AEC /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
 		FD1BF1F92106C385001141AB = {
 			isa = PBXGroup;
 			children = (
@@ -271,6 +278,7 @@
 				FD1BF2092106C385001141AB /* ViewController.m */,
 				FD2BB214213FD31D00FB6A38 /* VastTableViewProtocol.h */,
 				FD2BB215213FD31D00FB6A38 /* VastTableViewProtocol.m */,
+				FD1BB63421410D6C00A54AEC /* fmdb */,
 				FD9F2ACC21199C240030DF6A /* CollectionVC */,
 				FD9F2ACB21199C0F0030DF6A /* DrawVC */,
 				FD97BC002111539300A1500E /* MVVM */,
