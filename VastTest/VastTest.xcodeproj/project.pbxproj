@@ -69,6 +69,15 @@
 		FD5A769E21181D9C00699CED /* MenuLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5A769D21181D9C00699CED /* MenuLabelViewController.m */; };
 		FD5A76A2211824DF00699CED /* UIAlertController+supportedInterfaceOrientations.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5A76A1211824DF00699CED /* UIAlertController+supportedInterfaceOrientations.m */; };
 		FD5A76A72118265000699CED /* DrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5A76A62118265000699CED /* DrawViewController.m */; };
+		FD61AFC121422442006BC7AC /* FmdbViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD61AFC021422442006BC7AC /* FmdbViewController.m */; };
+		FD61AFC421422654006BC7AC /* FmdbHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FD61AFC321422654006BC7AC /* FmdbHelper.m */; };
+		FD61AFD421422666006BC7AC /* FMDatabase+InMemoryOnDiskIO.m in Sources */ = {isa = PBXBuildFile; fileRef = FD61AFC821422666006BC7AC /* FMDatabase+InMemoryOnDiskIO.m */; };
+		FD61AFD521422666006BC7AC /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = FD61AFCB21422666006BC7AC /* FMDatabaseQueue.m */; };
+		FD61AFD621422666006BC7AC /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FD61AFCE21422666006BC7AC /* FMDatabaseAdditions.m */; };
+		FD61AFD721422666006BC7AC /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = FD61AFCF21422666006BC7AC /* FMDatabase.m */; };
+		FD61AFD821422666006BC7AC /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = FD61AFD221422666006BC7AC /* FMDatabasePool.m */; };
+		FD61AFD921422666006BC7AC /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = FD61AFD321422666006BC7AC /* FMResultSet.m */; };
+		FD61AFDB2142753A006BC7AC /* btn.png in Resources */ = {isa = PBXBuildFile; fileRef = FD61AFDA2142753A006BC7AC /* btn.png */; };
 		FD865DA4213E256A0098A852 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FD865D8B213E25690098A852 /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		FD865DA5213E256A0098A852 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FD865D94213E25690098A852 /* ViewController+MASAdditions.m */; };
 		FD865DA6213E256A0098A852 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = FD865D98213E25690098A852 /* MASCompositeConstraint.m */; };
@@ -202,6 +211,23 @@
 		FD5A76A1211824DF00699CED /* UIAlertController+supportedInterfaceOrientations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+supportedInterfaceOrientations.m"; sourceTree = "<group>"; };
 		FD5A76A52118265000699CED /* DrawViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawViewController.h; sourceTree = "<group>"; };
 		FD5A76A62118265000699CED /* DrawViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawViewController.m; sourceTree = "<group>"; };
+		FD61AFBF21422442006BC7AC /* FmdbViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FmdbViewController.h; sourceTree = "<group>"; };
+		FD61AFC021422442006BC7AC /* FmdbViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FmdbViewController.m; sourceTree = "<group>"; };
+		FD61AFC221422654006BC7AC /* FmdbHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FmdbHelper.h; sourceTree = "<group>"; };
+		FD61AFC321422654006BC7AC /* FmdbHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FmdbHelper.m; sourceTree = "<group>"; };
+		FD61AFC721422666006BC7AC /* FMDatabase+InMemoryOnDiskIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FMDatabase+InMemoryOnDiskIO.h"; sourceTree = "<group>"; };
+		FD61AFC821422666006BC7AC /* FMDatabase+InMemoryOnDiskIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FMDatabase+InMemoryOnDiskIO.m"; sourceTree = "<group>"; };
+		FD61AFCA21422666006BC7AC /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		FD61AFCB21422666006BC7AC /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		FD61AFCC21422666006BC7AC /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		FD61AFCD21422666006BC7AC /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		FD61AFCE21422666006BC7AC /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		FD61AFCF21422666006BC7AC /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		FD61AFD021422666006BC7AC /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		FD61AFD121422666006BC7AC /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		FD61AFD221422666006BC7AC /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		FD61AFD321422666006BC7AC /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		FD61AFDA2142753A006BC7AC /* btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn.png; sourceTree = "<group>"; };
 		FD865D8A213E25690098A852 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		FD865D8B213E25690098A852 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
 		FD865D8C213E25690098A852 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
@@ -250,6 +276,10 @@
 		FD1BB63421410D6C00A54AEC /* fmdb */ = {
 			isa = PBXGroup;
 			children = (
+				FD61AFBF21422442006BC7AC /* FmdbViewController.h */,
+				FD61AFC021422442006BC7AC /* FmdbViewController.m */,
+				FD61AFC221422654006BC7AC /* FmdbHelper.h */,
+				FD61AFC321422654006BC7AC /* FmdbHelper.m */,
 			);
 			path = fmdb;
 			sourceTree = "<group>";
@@ -301,6 +331,7 @@
 		FD1BF2232106D17D001141AB /* image */ = {
 			isa = PBXGroup;
 			children = (
+				FD61AFDA2142753A006BC7AC /* btn.png */,
 				FD1BF2242106D17D001141AB /* 网络请求的依赖1.png */,
 				FD1BF2252106D17D001141AB /* 网络请求的依赖2.png */,
 				FD1BF2262106D17D001141AB /* 网络请求的依赖3.png */,
@@ -350,6 +381,7 @@
 		FD2592E221105CE500014FC6 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				FD61AFC521422666006BC7AC /* FMDB */,
 				FD865D89213E25690098A852 /* Masonry */,
 				FD2592E321105CE500014FC6 /* FBKVOController */,
 				FD2592EA21105CE500014FC6 /* AFNetworking */,
@@ -460,6 +492,41 @@
 				FD5A769D21181D9C00699CED /* MenuLabelViewController.m */,
 			);
 			path = menuVc;
+			sourceTree = "<group>";
+		};
+		FD61AFC521422666006BC7AC /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				FD61AFC621422666006BC7AC /* extra */,
+				FD61AFC921422666006BC7AC /* src */,
+			);
+			path = FMDB;
+			sourceTree = "<group>";
+		};
+		FD61AFC621422666006BC7AC /* extra */ = {
+			isa = PBXGroup;
+			children = (
+				FD61AFC721422666006BC7AC /* FMDatabase+InMemoryOnDiskIO.h */,
+				FD61AFC821422666006BC7AC /* FMDatabase+InMemoryOnDiskIO.m */,
+			);
+			path = extra;
+			sourceTree = "<group>";
+		};
+		FD61AFC921422666006BC7AC /* src */ = {
+			isa = PBXGroup;
+			children = (
+				FD61AFCA21422666006BC7AC /* FMDatabase.h */,
+				FD61AFCB21422666006BC7AC /* FMDatabaseQueue.m */,
+				FD61AFCC21422666006BC7AC /* FMResultSet.h */,
+				FD61AFCD21422666006BC7AC /* FMDatabasePool.h */,
+				FD61AFCE21422666006BC7AC /* FMDatabaseAdditions.m */,
+				FD61AFCF21422666006BC7AC /* FMDatabase.m */,
+				FD61AFD021422666006BC7AC /* FMDatabaseQueue.h */,
+				FD61AFD121422666006BC7AC /* FMDatabaseAdditions.h */,
+				FD61AFD221422666006BC7AC /* FMDatabasePool.m */,
+				FD61AFD321422666006BC7AC /* FMResultSet.m */,
+			);
+			path = src;
 			sourceTree = "<group>";
 		};
 		FD7E82DC212673130076BF2C /* TagLayout */ = {
@@ -628,6 +695,7 @@
 				FD258EC1211012D100014FC6 /* 难题3.png in Resources */,
 				FD2C0A542112E80E00ADAEC9 /* MVVM3.png in Resources */,
 				FD2C0A552112E80E00ADAEC9 /* MVC2.png in Resources */,
+				FD61AFDB2142753A006BC7AC /* btn.png in Resources */,
 				FD1BF2272106D17D001141AB /* 网络请求的依赖1.png in Resources */,
 				FD25931421105CE500014FC6 /* LICENSE in Resources */,
 				FD25931521105CE500014FC6 /* README.md in Resources */,
@@ -649,8 +717,11 @@
 			files = (
 				FD1BF20A2106C385001141AB /* ViewController.m in Sources */,
 				FD1BF2152106C38B001141AB /* main.m in Sources */,
+				FD61AFD821422666006BC7AC /* FMDatabasePool.m in Sources */,
 				FD25931721105CE500014FC6 /* UIRefreshControl+AFNetworking.m in Sources */,
 				FD1B75642122D413004A09C8 /* GTagSimpleCollectionHeadView.m in Sources */,
+				FD61AFC421422654006BC7AC /* FmdbHelper.m in Sources */,
+				FD61AFD621422666006BC7AC /* FMDatabaseAdditions.m in Sources */,
 				FD25931621105CE500014FC6 /* UIProgressView+AFNetworking.m in Sources */,
 				FD2C0A4B211299EB00ADAEC9 /* LoginViewModel.m in Sources */,
 				FD258EC72110530800014FC6 /* ListViewController.m in Sources */,
@@ -660,6 +731,7 @@
 				FD5A769E21181D9C00699CED /* MenuLabelViewController.m in Sources */,
 				FD5A76A2211824DF00699CED /* UIAlertController+supportedInterfaceOrientations.m in Sources */,
 				FD5A76A72118265000699CED /* DrawViewController.m in Sources */,
+				FD61AFD721422666006BC7AC /* FMDatabase.m in Sources */,
 				FD865DA5213E256A0098A852 /* ViewController+MASAdditions.m in Sources */,
 				FD25931921105CE500014FC6 /* UIImageView+AFNetworking.m in Sources */,
 				FD25932421105CE500014FC6 /* AFSecurityPolicy.m in Sources */,
@@ -673,6 +745,8 @@
 				FD1B755521227E53004A09C8 /* ClassifyLabelViewController.m in Sources */,
 				FD25931C21105CE500014FC6 /* UIWebView+AFNetworking.m in Sources */,
 				FD25931821105CE500014FC6 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				FD61AFD921422666006BC7AC /* FMResultSet.m in Sources */,
+				FD61AFD521422666006BC7AC /* FMDatabaseQueue.m in Sources */,
 				FDDA50C52133FA17004F3106 /* ShowNotifyAlertView.m in Sources */,
 				FD865DA4213E256A0098A852 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				FD2C0A4E211299F500ADAEC9 /* LoginModel.m in Sources */,
@@ -693,8 +767,10 @@
 				FD2A5D7C211C4033004A875B /* GTagCollectionViewCell.m in Sources */,
 				FD1B75612122C7AD004A09C8 /* GTagFlowLayout.m in Sources */,
 				FD865DA7213E256A0098A852 /* MASConstraintMaker.m in Sources */,
+				FD61AFC121422442006BC7AC /* FmdbViewController.m in Sources */,
 				FD25932221105CE500014FC6 /* AFURLRequestSerialization.m in Sources */,
 				FD865DAD213E256A0098A852 /* MASViewAttribute.m in Sources */,
+				FD61AFD421422666006BC7AC /* FMDatabase+InMemoryOnDiskIO.m in Sources */,
 				FD25931B21105CE500014FC6 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				FD2BB216213FD31D00FB6A38 /* VastTableViewProtocol.m in Sources */,
 				FDDE7A562110624600BBA0E3 /* ListDetailViewController.m in Sources */,

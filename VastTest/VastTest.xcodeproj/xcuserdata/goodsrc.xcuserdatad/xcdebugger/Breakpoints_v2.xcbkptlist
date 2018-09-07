@@ -45,53 +45,5 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "VastTest/VastTableViewProtocol.m"
-            timestampString = "557833058.694742"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
-            landmarkName = "-tableView:cellForRowAtIndexPath:"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[VastTableViewProtocol tableView:cellForRowAtIndexPath:]"
-                  moduleName = "VastTest"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/goodsrc/Desktop/VastProject/VastTest/VastTest/VastTableViewProtocol.m"
-                  timestampString = "557833058.782904"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "45"
-                  endingLineNumber = "45"
-                  offsetFromSymbolStart = "121">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[VastTableViewProtocol tableView:cellForRowAtIndexPath:]"
-                  moduleName = "eval101.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/goodsrc/Desktop/VastProject/VastTest/VastTest/VastTableViewProtocol.m"
-                  timestampString = "557833119.5742069"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "45"
-                  endingLineNumber = "45"
-                  offsetFromSymbolStart = "121">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
