@@ -15,5 +15,6 @@
 #import "BestVastTools.h"
 
 #import "GTagLayoutHelper.h"
+#define DLocal(key) NSLocalizedString(key, nil)
 
 #endif /* VastPrefixHeader_pch */

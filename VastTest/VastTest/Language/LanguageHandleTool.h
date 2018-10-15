@@ -9,16 +9,13 @@
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
-typedef NS_ENUM(NSInteger, LanguageSelect) {
-    Language_Chinese, // zh-Hans-US
-    Language_Engulish,// en
-};
-#define Langu_En      @"en"
-#define Langu_Chinese @"zh-Hans-US"
+
+#define Language_En      @"en"
+#define Language_Chinese @"zh-Hans-US"
 @interface LanguageHandleTool : NSObject
 + (NSString *)getLanguage;
 
-+ (void)setLocalLanguage:(LanguageSelect)language;
++ (void)setLocalLanguage:(NSString *)language;
 
 + (NSArray *)allLanguage;
 

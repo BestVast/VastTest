@@ -18,14 +18,10 @@
     return currentLanguage;
 }
 
-+ (void)setLocalLanguage:(LanguageSelect)language {
++ (void)setLocalLanguage:(NSString *)language {
     
-    NSString *langu = @"zh-Hans-US";
-    if (language == Language_Engulish) {
-        langu = @"en";
-    }
-    [NSBundle setLanguage:langu];
-    [[NSUserDefaults standardUserDefaults] setValue:@[langu] forKey:@"AppleLanguages"];
+    [NSBundle setLanguage:language];
+    [[NSUserDefaults standardUserDefaults] setValue:@[language] forKey:@"AppleLanguages"];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
@@ -45,9 +41,7 @@
 
 + (NSString *)getStringForKey:(NSString *)key withTable:(NSString *)table {
     NSString *langu = [self getLanguage];
-    if ([langu isEqualToString:Langu_En]) {
-        langu = Langu_En;
-    } else {
+    if ([langu isEqualToString:Language_Chinese]) {
         langu = @"zh-Hans";
     }
     NSString *path = [[NSBundle mainBundle]pathForResource:langu ofType:@"lproj"];

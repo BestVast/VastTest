@@ -21,6 +21,7 @@
 #import "ShowNotifyAlertView.h"
 #import "DrawViewController.h"
 #import "VastTableViewProtocol.h"
+#import "LanguageHandleTool.h"
 @interface ViewController ()
 @property (nonatomic, strong) NSMutableArray *dataSource;
 @property (nonatomic, strong) VastTableViewProtocol *protocol;
@@ -31,14 +32,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.dataSource = [[NSMutableArray alloc] initWithArray:@[@"登录页面MVVM", @"弹框页面", @"MenuViewAndUIStackView", @"Match", @"FMDB", @"Draw", @"RegularCollection", @"FlowCollection", @"ClassifyLabelView", @"HorizontalCollection"]];
+    NSString *first = [LanguageHandleTool getStringForKey:@"登录页面MVVM" withTable:@""];
+    NSString *second = [LanguageHandleTool getStringForKey:@"弹框页面" withTable:@""];
+    
+    self.dataSource = [[NSMutableArray alloc] initWithArray:@[first, second, @"MenuViewAndUIStackView", @"Match", @"FMDB", @"Draw", @"RegularCollection", @"FlowCollection", @"ClassifyLabelView", @"HorizontalCollection"]];
     //[match](https://www.jianshu.com/p/2b599fc55011)
     [self uiConfig];
+    
 }
 
 - (void)uiConfig {
     self.view.backgroundColor = [UIColor whiteColor];
-    UITableView *table = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT*2/3) style:UITableViewStylePlain];
+    UITableView *table = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT*0.9) style:UITableViewStylePlain];
     //VastTableViewProtocol 必须为全局变量
     _protocol = [[VastTableViewProtocol alloc] initWithDataSource:self.dataSource];
     @WeakObj(self);

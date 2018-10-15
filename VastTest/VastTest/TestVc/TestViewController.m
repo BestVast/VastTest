@@ -7,8 +7,9 @@
 //
 
 #import "TestViewController.h"
-
+#import "UnitTestModel.h"
 @interface TestViewController ()
+@property (nonatomic, strong) UILabel *showLabel;
 
 @end
 
@@ -16,17 +17,28 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    // Do any additional setup after loading the view, typically from a nib.
+    [self uiConfig];
+    [self getData];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)uiConfig {
+    _showLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 100, 355, 180)];
+    [self.view addSubview:_showLabel];
+    _showLabel.numberOfLines = 0;
+    _showLabel.lineBreakMode = NSLineBreakByClipping;
+    _showLabel.backgroundColor = [UIColor cyanColor];
 }
-*/
+- (void)getData {
+    UnitTestModel *model = [UnitTestModel new];
+    [model callbackDataSuccess:^(id  _Nonnull data) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            self.showLabel.text = [NSString stringWithFormat:@"%@", data];
+        });
+    } error:^(NSError * _Nonnull error) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            self.showLabel.text = error.localizedDescription;
+        });
+    }];
+}
 
 @end

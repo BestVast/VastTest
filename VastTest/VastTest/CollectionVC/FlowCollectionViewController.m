@@ -9,6 +9,9 @@
 #import "FlowCollectionViewController.h"
 #import "WaterFallsFlowLayout.h"
 #import "GTagCollectionViewCell.h"
+#import "LanguageHandleTool.h"
+#import "ViewController.h"
+#import "LanguageXibTestView.h"
 @interface FlowCollectionViewController () <UICollectionViewDelegate, UICollectionViewDataSource>
 @property (nonatomic, strong) UICollectionView *collectionView;
 @property (nonatomic, strong) NSMutableArray *dataSource;
@@ -19,20 +22,35 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    self.dataSource = [[NSMutableArray alloc] initWithArray:@[@"1", @"1", @"1", @"1", @"1", @"1", @"1", @"1", @"1", @"1", ]];
+    self.navigationItem.title = DLocal(@"设置语言");
+    self.dataSource = [[NSMutableArray alloc] initWithArray:@[@"简体中文", @"English", @"1", @"1", @"1", @"1", @"1", @"1", @"1", @"1", ]];
     
     [self.view addSubview:self.collectionView];
     
-    
+    LanguageXibTestView *xib = [[LanguageXibTestView alloc] init];
+    //[[[NSBundle mainBundle] loadNibNamed:@"LanguageXibTestView" owner:self options:nil] firstObject];
+    [self.view addSubview:xib];
 }
 
-
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    // en.lproj  zh-Hans.lproj
+    // en        zh-Hans-US
+    DLog(@"%@ \n", [LanguageHandleTool getLanguage]);
+    if (indexPath.row == 0) {
+        [LanguageHandleTool setLocalLanguage:Language_Chinese];
+    } else if (indexPath.row == 1) {
+        [LanguageHandleTool setLocalLanguage:Language_En];
+    } else {
+        return;
+    }
+    [LanguageHandleTool resetRootViewController];
+}
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return self.dataSource.count;
 }
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     GTagCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
+    cell.title = self.dataSource[indexPath.row];
     return cell;
 }
 - (UICollectionView *)collectionView {

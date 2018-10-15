@@ -25,6 +25,9 @@
 		FD1BF2282106D17D001141AB /* 网络请求的依赖2.png in Resources */ = {isa = PBXBuildFile; fileRef = FD1BF2252106D17D001141AB /* 网络请求的依赖2.png */; };
 		FD1BF2292106D17D001141AB /* 网络请求的依赖3.png in Resources */ = {isa = PBXBuildFile; fileRef = FD1BF2262106D17D001141AB /* 网络请求的依赖3.png */; };
 		FD1BF22F2106D706001141AB /* ShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1BF22E2106D706001141AB /* ShowViewController.m */; };
+		FD24F5FA21708279001298C5 /* UnitTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FD24F5F921708279001298C5 /* UnitTestModel.m */; };
+		FD24F5FE21708326001298C5 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD24F5FD21708326001298C5 /* TestViewController.m */; };
+		FD24F601217095CF001298C5 /* LanguageHandleTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FD24F600217095CF001298C5 /* LanguageHandleTool.m */; };
 		FD258EBF211012D100014FC6 /* 难题1.png in Resources */ = {isa = PBXBuildFile; fileRef = FD258EBC211012D100014FC6 /* 难题1.png */; };
 		FD258EC0211012D100014FC6 /* 难题2.png in Resources */ = {isa = PBXBuildFile; fileRef = FD258EBD211012D100014FC6 /* 难题2.png */; };
 		FD258EC1211012D100014FC6 /* 难题3.png in Resources */ = {isa = PBXBuildFile; fileRef = FD258EBE211012D100014FC6 /* 难题3.png */; };
@@ -65,6 +68,10 @@
 		FD389E0E212180DD008CCA07 /* WaterFallsFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = FD389E0D212180DD008CCA07 /* WaterFallsFlowLayout.m */; };
 		FD467F2B21252BF500783C27 /* GTagLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD467F2A21252BF500783C27 /* GTagLayoutView.m */; };
 		FD467F2E212559E600783C27 /* GTagAddCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FD467F2D212559E600783C27 /* GTagAddCollectionViewCell.m */; };
+		FD5349CD216D87F4007C0AA0 /* VastTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5349CC216D87F4007C0AA0 /* VastTestTests.m */; };
+		FD5349DB216D8802007C0AA0 /* VastTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5349DA216D8802007C0AA0 /* VastTestUITests.m */; };
+		FD54A15A2147C3DD00B8C579 /* btnEnglish.png in Resources */ = {isa = PBXBuildFile; fileRef = FD54A1592147C3DD00B8C579 /* btnEnglish.png */; };
+		FD54A15B2147C3FF00B8C579 /* btn.png in Resources */ = {isa = PBXBuildFile; fileRef = FD54A15D2147C3FF00B8C579 /* btn.png */; };
 		FD5A769B2117DF3F00699CED /* VastAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5A769A2117DF3F00699CED /* VastAlertView.m */; };
 		FD5A769E21181D9C00699CED /* MenuLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5A769D21181D9C00699CED /* MenuLabelViewController.m */; };
 		FD5A76A2211824DF00699CED /* UIAlertController+supportedInterfaceOrientations.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5A76A1211824DF00699CED /* UIAlertController+supportedInterfaceOrientations.m */; };
@@ -77,7 +84,6 @@
 		FD61AFD721422666006BC7AC /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = FD61AFCF21422666006BC7AC /* FMDatabase.m */; };
 		FD61AFD821422666006BC7AC /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = FD61AFD221422666006BC7AC /* FMDatabasePool.m */; };
 		FD61AFD921422666006BC7AC /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = FD61AFD321422666006BC7AC /* FMResultSet.m */; };
-		FD61AFDB2142753A006BC7AC /* btn.png in Resources */ = {isa = PBXBuildFile; fileRef = FD61AFDA2142753A006BC7AC /* btn.png */; };
 		FD865DA4213E256A0098A852 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FD865D8B213E25690098A852 /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		FD865DA5213E256A0098A852 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FD865D94213E25690098A852 /* ViewController+MASAdditions.m */; };
 		FD865DA6213E256A0098A852 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = FD865D98213E25690098A852 /* MASCompositeConstraint.m */; };
@@ -90,9 +96,30 @@
 		FD865DAD213E256A0098A852 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = FD865DA2213E25690098A852 /* MASViewAttribute.m */; };
 		FD865DAE213E256A0098A852 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FD865DA3213E25690098A852 /* Info.plist */; };
 		FD97BC032111B5FC00A1500E /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD97BC022111B5FC00A1500E /* LoginViewController.m */; };
+		FDD7F51A217460EC005AFB24 /* LanguageXibTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD7F519217460EC005AFB24 /* LanguageXibTestView.m */; };
+		FDD7F53221746CF1005AFB24 /* LanguageXibTestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDD7F53421746CF1005AFB24 /* LanguageXibTestView.xib */; };
+		FDD7F53E21747323005AFB24 /* NSBundle+Language.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD7F53D21747323005AFB24 /* NSBundle+Language.m */; };
+		FDD7F540217475AC005AFB24 /* VastProject.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FDD7F53F217475AC005AFB24 /* VastProject.bundle */; };
 		FDDA50C52133FA17004F3106 /* ShowNotifyAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDA50C32133FA17004F3106 /* ShowNotifyAlertView.m */; };
 		FDDE7A562110624600BBA0E3 /* ListDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDDE7A552110624600BBA0E3 /* ListDetailViewController.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD5349CF216D87F4007C0AA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD1BF1FA2106C385001141AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD1BF2012106C385001141AB;
+			remoteInfo = VastTest;
+		};
+		FD5349DD216D8802007C0AA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD1BF1FA2106C385001141AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD1BF2012106C385001141AB;
+			remoteInfo = VastTest;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		FD1B755321227E53004A09C8 /* ClassifyLabelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassifyLabelViewController.h; sourceTree = "<group>"; };
@@ -128,6 +155,12 @@
 		FD1BF2262106D17D001141AB /* 网络请求的依赖3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "网络请求的依赖3.png"; sourceTree = "<group>"; };
 		FD1BF22D2106D706001141AB /* ShowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowViewController.h; sourceTree = "<group>"; };
 		FD1BF22E2106D706001141AB /* ShowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowViewController.m; sourceTree = "<group>"; };
+		FD24F5F821708279001298C5 /* UnitTestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnitTestModel.h; sourceTree = "<group>"; };
+		FD24F5F921708279001298C5 /* UnitTestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnitTestModel.m; sourceTree = "<group>"; };
+		FD24F5FC21708326001298C5 /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		FD24F5FD21708326001298C5 /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		FD24F5FF217095CF001298C5 /* LanguageHandleTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LanguageHandleTool.h; sourceTree = "<group>"; };
+		FD24F600217095CF001298C5 /* LanguageHandleTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LanguageHandleTool.m; sourceTree = "<group>"; };
 		FD258EBC211012D100014FC6 /* 难题1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "难题1.png"; sourceTree = "<group>"; };
 		FD258EBD211012D100014FC6 /* 难题2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "难题2.png"; sourceTree = "<group>"; };
 		FD258EBE211012D100014FC6 /* 难题3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "难题3.png"; sourceTree = "<group>"; };
@@ -203,6 +236,17 @@
 		FD467F2C212559E600783C27 /* GTagAddCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTagAddCollectionViewCell.h; sourceTree = "<group>"; };
 		FD467F2D212559E600783C27 /* GTagAddCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTagAddCollectionViewCell.m; sourceTree = "<group>"; };
 		FD467F2F2125847E00783C27 /* GTagLayoutHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTagLayoutHelper.h; sourceTree = "<group>"; };
+		FD5349CA216D87F4007C0AA0 /* VastTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VastTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD5349CC216D87F4007C0AA0 /* VastTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VastTestTests.m; sourceTree = "<group>"; };
+		FD5349CE216D87F4007C0AA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD5349D8216D8802007C0AA0 /* VastTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VastTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD5349DA216D8802007C0AA0 /* VastTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VastTestUITests.m; sourceTree = "<group>"; };
+		FD5349DC216D8802007C0AA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD54A1572147C37A00B8C579 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		FD54A1582147C37A00B8C579 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		FD54A1592147C3DD00B8C579 /* btnEnglish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnEnglish.png; sourceTree = "<group>"; };
+		FD54A15C2147C3FF00B8C579 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = en.lproj/btn.png; sourceTree = "<group>"; };
+		FD54A15E2147C44500B8C579 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "zh-Hans"; path = "zh-Hans.lproj/btn.png"; sourceTree = "<group>"; };
 		FD5A76992117DF3F00699CED /* VastAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VastAlertView.h; sourceTree = "<group>"; };
 		FD5A769A2117DF3F00699CED /* VastAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VastAlertView.m; sourceTree = "<group>"; };
 		FD5A769C21181D9C00699CED /* MenuLabelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuLabelViewController.h; sourceTree = "<group>"; };
@@ -227,7 +271,6 @@
 		FD61AFD121422666006BC7AC /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
 		FD61AFD221422666006BC7AC /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
 		FD61AFD321422666006BC7AC /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
-		FD61AFDA2142753A006BC7AC /* btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn.png; sourceTree = "<group>"; };
 		FD865D8A213E25690098A852 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		FD865D8B213E25690098A852 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
 		FD865D8C213E25690098A852 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
@@ -256,6 +299,14 @@
 		FD865DA3213E25690098A852 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD97BC012111B5FC00A1500E /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		FD97BC022111B5FC00A1500E /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		FDD7F518217460EC005AFB24 /* LanguageXibTestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LanguageXibTestView.h; sourceTree = "<group>"; };
+		FDD7F519217460EC005AFB24 /* LanguageXibTestView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LanguageXibTestView.m; sourceTree = "<group>"; };
+		FDD7F53321746CF1005AFB24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LanguageXibTestView.xib; sourceTree = "<group>"; };
+		FDD7F53621746D08005AFB24 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LanguageXibTestView.strings; sourceTree = "<group>"; };
+		FDD7F53821746D0D005AFB24 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LanguageXibTestView.strings"; sourceTree = "<group>"; };
+		FDD7F53C21747323005AFB24 /* NSBundle+Language.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Language.h"; sourceTree = "<group>"; };
+		FDD7F53D21747323005AFB24 /* NSBundle+Language.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Language.m"; sourceTree = "<group>"; };
+		FDD7F53F217475AC005AFB24 /* VastProject.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = VastProject.bundle; sourceTree = "<group>"; };
 		FDDA50C32133FA17004F3106 /* ShowNotifyAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowNotifyAlertView.m; sourceTree = "<group>"; };
 		FDDA50C42133FA17004F3106 /* ShowNotifyAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowNotifyAlertView.h; sourceTree = "<group>"; };
 		FDDE7A542110624600BBA0E3 /* ListDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListDetailViewController.h; sourceTree = "<group>"; };
@@ -264,6 +315,20 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		FD1BF1FF2106C385001141AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD5349C7216D87F4007C0AA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD5349D5216D8802007C0AA0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -288,6 +353,8 @@
 			isa = PBXGroup;
 			children = (
 				FD1BF2042106C385001141AB /* VastTest */,
+				FD5349CB216D87F4007C0AA0 /* VastTestTests */,
+				FD5349D9216D8802007C0AA0 /* VastTestUITests */,
 				FD1BF2032106C385001141AB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -296,6 +363,8 @@
 			isa = PBXGroup;
 			children = (
 				FD1BF2022106C385001141AB /* VastTest.app */,
+				FD5349CA216D87F4007C0AA0 /* VastTestTests.xctest */,
+				FD5349D8216D8802007C0AA0 /* VastTestUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -308,6 +377,8 @@
 				FD1BF2092106C385001141AB /* ViewController.m */,
 				FD2BB214213FD31D00FB6A38 /* VastTableViewProtocol.h */,
 				FD2BB215213FD31D00FB6A38 /* VastTableViewProtocol.m */,
+				FDD7F54121747D88005AFB24 /* Language */,
+				FD24F5FB217082FE001298C5 /* TestVc */,
 				FD1BB63421410D6C00A54AEC /* fmdb */,
 				FD9F2ACC21199C240030DF6A /* CollectionVC */,
 				FD9F2ACB21199C0F0030DF6A /* DrawVC */,
@@ -331,7 +402,8 @@
 		FD1BF2232106D17D001141AB /* image */ = {
 			isa = PBXGroup;
 			children = (
-				FD61AFDA2142753A006BC7AC /* btn.png */,
+				FD54A15D2147C3FF00B8C579 /* btn.png */,
+				FD54A1592147C3DD00B8C579 /* btnEnglish.png */,
 				FD1BF2242106D17D001141AB /* 网络请求的依赖1.png */,
 				FD1BF2252106D17D001141AB /* 网络请求的依赖2.png */,
 				FD1BF2262106D17D001141AB /* 网络请求的依赖3.png */,
@@ -376,6 +448,17 @@
 				FD1BF2222106C5B5001141AB /* VastDefineTools.h */,
 			);
 			path = Config;
+			sourceTree = "<group>";
+		};
+		FD24F5FB217082FE001298C5 /* TestVc */ = {
+			isa = PBXGroup;
+			children = (
+				FD24F5FC21708326001298C5 /* TestViewController.h */,
+				FD24F5FD21708326001298C5 /* TestViewController.m */,
+				FD24F5F821708279001298C5 /* UnitTestModel.h */,
+				FD24F5F921708279001298C5 /* UnitTestModel.m */,
+			);
+			path = TestVc;
 			sourceTree = "<group>";
 		};
 		FD2592E221105CE500014FC6 /* Libs */ = {
@@ -459,6 +542,24 @@
 				FD25931021105CE500014FC6 /* AFHTTPSessionManager.h */,
 			);
 			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		FD5349CB216D87F4007C0AA0 /* VastTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				FD5349CC216D87F4007C0AA0 /* VastTestTests.m */,
+				FD5349CE216D87F4007C0AA0 /* Info.plist */,
+			);
+			path = VastTestTests;
+			sourceTree = "<group>";
+		};
+		FD5349D9216D8802007C0AA0 /* VastTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FD5349DA216D8802007C0AA0 /* VastTestUITests.m */,
+				FD5349DC216D8802007C0AA0 /* Info.plist */,
+			);
+			path = VastTestUITests;
 			sourceTree = "<group>";
 		};
 		FD5A769F21181FCC00699CED /* AppDelegate */ = {
@@ -628,6 +729,21 @@
 			path = CollectionVC;
 			sourceTree = "<group>";
 		};
+		FDD7F54121747D88005AFB24 /* Language */ = {
+			isa = PBXGroup;
+			children = (
+				FDD7F53F217475AC005AFB24 /* VastProject.bundle */,
+				FD24F5FF217095CF001298C5 /* LanguageHandleTool.h */,
+				FD24F600217095CF001298C5 /* LanguageHandleTool.m */,
+				FDD7F53C21747323005AFB24 /* NSBundle+Language.h */,
+				FDD7F53D21747323005AFB24 /* NSBundle+Language.m */,
+				FDD7F518217460EC005AFB24 /* LanguageXibTestView.h */,
+				FDD7F519217460EC005AFB24 /* LanguageXibTestView.m */,
+				FDD7F53421746CF1005AFB24 /* LanguageXibTestView.xib */,
+			);
+			path = Language;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -648,6 +764,42 @@
 			productReference = FD1BF2022106C385001141AB /* VastTest.app */;
 			productType = "com.apple.product-type.application";
 		};
+		FD5349C9216D87F4007C0AA0 /* VastTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD5349D3216D87F4007C0AA0 /* Build configuration list for PBXNativeTarget "VastTestTests" */;
+			buildPhases = (
+				FD5349C6216D87F4007C0AA0 /* Sources */,
+				FD5349C7216D87F4007C0AA0 /* Frameworks */,
+				FD5349C8216D87F4007C0AA0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD5349D0216D87F4007C0AA0 /* PBXTargetDependency */,
+			);
+			name = VastTestTests;
+			productName = VastTestTests;
+			productReference = FD5349CA216D87F4007C0AA0 /* VastTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FD5349D7216D8802007C0AA0 /* VastTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD5349DF216D8802007C0AA0 /* Build configuration list for PBXNativeTarget "VastTestUITests" */;
+			buildPhases = (
+				FD5349D4216D8802007C0AA0 /* Sources */,
+				FD5349D5216D8802007C0AA0 /* Frameworks */,
+				FD5349D6216D8802007C0AA0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD5349DE216D8802007C0AA0 /* PBXTargetDependency */,
+			);
+			name = VastTestUITests;
+			productName = VastTestUITests;
+			productReference = FD5349D8216D8802007C0AA0 /* VastTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -661,6 +813,14 @@
 					FD1BF2012106C385001141AB = {
 						CreatedOnToolsVersion = 10.0;
 					};
+					FD5349C9216D87F4007C0AA0 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = FD1BF2012106C385001141AB;
+					};
+					FD5349D7216D8802007C0AA0 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = FD1BF2012106C385001141AB;
+					};
 				};
 			};
 			buildConfigurationList = FD1BF1FD2106C385001141AB /* Build configuration list for PBXProject "VastTest" */;
@@ -670,6 +830,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = FD1BF1F92106C385001141AB;
 			productRefGroup = FD1BF2032106C385001141AB /* Products */;
@@ -677,6 +838,8 @@
 			projectRoot = "";
 			targets = (
 				FD1BF2012106C385001141AB /* VastTest */,
+				FD5349C9216D87F4007C0AA0 /* VastTestTests */,
+				FD5349D7216D8802007C0AA0 /* VastTestUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -691,11 +854,12 @@
 				FD865DAE213E256A0098A852 /* Info.plist in Resources */,
 				FD1BF2292106D17D001141AB /* 网络请求的依赖3.png in Resources */,
 				FD2C0A572112E80E00ADAEC9 /* MVVM1.png in Resources */,
+				FDD7F540217475AC005AFB24 /* VastProject.bundle in Resources */,
 				FD258EC0211012D100014FC6 /* 难题2.png in Resources */,
 				FD258EC1211012D100014FC6 /* 难题3.png in Resources */,
 				FD2C0A542112E80E00ADAEC9 /* MVVM3.png in Resources */,
 				FD2C0A552112E80E00ADAEC9 /* MVC2.png in Resources */,
-				FD61AFDB2142753A006BC7AC /* btn.png in Resources */,
+				FD54A15B2147C3FF00B8C579 /* btn.png in Resources */,
 				FD1BF2272106D17D001141AB /* 网络请求的依赖1.png in Resources */,
 				FD25931421105CE500014FC6 /* LICENSE in Resources */,
 				FD25931521105CE500014FC6 /* README.md in Resources */,
@@ -704,7 +868,23 @@
 				FD2C0A582112E80E00ADAEC9 /* MVC1.png in Resources */,
 				FD1BF2282106D17D001141AB /* 网络请求的依赖2.png in Resources */,
 				FD25931321105CE500014FC6 /* Info.plist in Resources */,
+				FDD7F53221746CF1005AFB24 /* LanguageXibTestView.xib in Resources */,
 				FD1BF20D2106C385001141AB /* Main.storyboard in Resources */,
+				FD54A15A2147C3DD00B8C579 /* btnEnglish.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD5349C8216D87F4007C0AA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD5349D6216D8802007C0AA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -729,6 +909,7 @@
 				FD865DAA213E256A0098A852 /* View+MASAdditions.m in Sources */,
 				FD97BC032111B5FC00A1500E /* LoginViewController.m in Sources */,
 				FD5A769E21181D9C00699CED /* MenuLabelViewController.m in Sources */,
+				FD24F5FA21708279001298C5 /* UnitTestModel.m in Sources */,
 				FD5A76A2211824DF00699CED /* UIAlertController+supportedInterfaceOrientations.m in Sources */,
 				FD5A76A72118265000699CED /* DrawViewController.m in Sources */,
 				FD61AFD721422666006BC7AC /* FMDatabase.m in Sources */,
@@ -738,6 +919,7 @@
 				FD865DA6213E256A0098A852 /* MASCompositeConstraint.m in Sources */,
 				FD25931121105CE500014FC6 /* NSObject+FBKVOController.m in Sources */,
 				FD25931221105CE500014FC6 /* FBKVOController.m in Sources */,
+				FDD7F51A217460EC005AFB24 /* LanguageXibTestView.m in Sources */,
 				FD5A769B2117DF3F00699CED /* VastAlertView.m in Sources */,
 				FD1BF2072106C385001141AB /* AppDelegate.m in Sources */,
 				FD389E0E212180DD008CCA07 /* WaterFallsFlowLayout.m in Sources */,
@@ -760,6 +942,8 @@
 				FD1BF21D2106C4E1001141AB /* BestVastTools.m in Sources */,
 				FD258EC4211052EB00014FC6 /* BaseViewController.m in Sources */,
 				FD467F2B21252BF500783C27 /* GTagLayoutView.m in Sources */,
+				FD24F601217095CF001298C5 /* LanguageHandleTool.m in Sources */,
+				FD24F5FE21708326001298C5 /* TestViewController.m in Sources */,
 				FD865DAC213E256A0098A852 /* MASViewConstraint.m in Sources */,
 				FD1B755E2122C780004A09C8 /* HorizontalCollectionViewController.m in Sources */,
 				FD25931D21105CE500014FC6 /* AFAutoPurgingImageCache.m in Sources */,
@@ -781,16 +965,47 @@
 				FD389E0B21217556008CCA07 /* FlowCollectionViewController.m in Sources */,
 				FD467F2E212559E600783C27 /* GTagAddCollectionViewCell.m in Sources */,
 				FD1B755B2122815F004A09C8 /* LabelView.m in Sources */,
+				FDD7F53E21747323005AFB24 /* NSBundle+Language.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD5349C6216D87F4007C0AA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD5349CD216D87F4007C0AA0 /* VastTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD5349D4216D8802007C0AA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD5349DB216D8802007C0AA0 /* VastTestUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD5349D0216D87F4007C0AA0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD1BF2012106C385001141AB /* VastTest */;
+			targetProxy = FD5349CF216D87F4007C0AA0 /* PBXContainerItemProxy */;
+		};
+		FD5349DE216D8802007C0AA0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD1BF2012106C385001141AB /* VastTest */;
+			targetProxy = FD5349DD216D8802007C0AA0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FD1BF20B2106C385001141AB /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				FD1BF20C2106C385001141AB /* Base */,
+				FD54A1572147C37A00B8C579 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -799,8 +1014,28 @@
 			isa = PBXVariantGroup;
 			children = (
 				FD1BF2112106C38B001141AB /* Base */,
+				FD54A1582147C37A00B8C579 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FD54A15D2147C3FF00B8C579 /* btn.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD54A15C2147C3FF00B8C579 /* en */,
+				FD54A15E2147C44500B8C579 /* zh-Hans */,
+			);
+			name = btn.png;
+			sourceTree = "<group>";
+		};
+		FDD7F53421746CF1005AFB24 /* LanguageXibTestView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDD7F53321746CF1005AFB24 /* Base */,
+				FDD7F53621746D08005AFB24 /* en */,
+				FDD7F53821746D0D005AFB24 /* zh-Hans */,
+			);
+			name = LanguageXibTestView.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -810,6 +1045,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -868,6 +1104,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -964,6 +1201,76 @@
 			};
 			name = Release;
 		};
+		FD5349D1216D87F4007C0AA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VastTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vast.VastTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VastTest.app/VastTest";
+			};
+			name = Debug;
+		};
+		FD5349D2216D87F4007C0AA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VastTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vast.VastTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VastTest.app/VastTest";
+			};
+			name = Release;
+		};
+		FD5349E0216D8802007C0AA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VastTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vast.VastTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VastTest;
+			};
+			name = Debug;
+		};
+		FD5349E1216D8802007C0AA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VastTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vast.VastTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VastTest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -981,6 +1288,24 @@
 			buildConfigurations = (
 				FD1BF2192106C38B001141AB /* Debug */,
 				FD1BF21A2106C38B001141AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD5349D3216D87F4007C0AA0 /* Build configuration list for PBXNativeTarget "VastTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD5349D1216D87F4007C0AA0 /* Debug */,
+				FD5349D2216D87F4007C0AA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD5349DF216D8802007C0AA0 /* Build configuration list for PBXNativeTarget "VastTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD5349E0216D8802007C0AA0 /* Debug */,
+				FD5349E1216D8802007C0AA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

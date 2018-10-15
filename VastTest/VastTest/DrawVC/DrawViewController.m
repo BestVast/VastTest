@@ -33,6 +33,24 @@
     [btn setImage:[UIImage imageNamed:@"btn.png"] forState:UIControlStateNormal];
     btn.imageView.contentMode = UIViewContentModeScaleAspectFit;
     [self btnTopImageAndBottomTitle:btn];
+    
+    /*http://www.cocoachina.com/bbs/read.php?tid-1716852-fpage-10.html
+     
+     */
+    
+    dispatch_semaphore_t sema = dispatch_semaphore_create(5);
+    for (int i = 0; i < 30; i++) {
+        dispatch_semaphore_wait(sema, DISPATCH_TIME_FOREVER);
+        
+        NSLog(@"%d", i+3);
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            // 操作
+            NSLog(@"%d", i+3);
+            sleep(i+3);
+            NSLog(@"%d", i+3);
+            dispatch_semaphore_signal(sema);
+        });
+    }
 }
 
 - (void)btnTopImageAndBottomTitle:(UIButton *)btn {
