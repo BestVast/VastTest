@@ -22,6 +22,7 @@
 #import "DrawViewController.h"
 #import "VastTableViewProtocol.h"
 #import "LanguageHandleTool.h"
+#import "KVCTestViewController.h"
 @interface ViewController ()
 @property (nonatomic, strong) NSMutableArray *dataSource;
 @property (nonatomic, strong) VastTableViewProtocol *protocol;
@@ -35,7 +36,7 @@
     NSString *first = [LanguageHandleTool getStringForKey:@"登录页面MVVM" withTable:@""];
     NSString *second = [LanguageHandleTool getStringForKey:@"弹框页面" withTable:@""];
     
-    self.dataSource = [[NSMutableArray alloc] initWithArray:@[first, second, @"MenuViewAndUIStackView", @"Match", @"FMDB", @"Draw", @"RegularCollection", @"FlowCollection(设置App语言)", @"ClassifyLabelView", @"HorizontalCollection"]];
+    self.dataSource = [[NSMutableArray alloc] initWithArray:@[first, second, @"MenuViewAndUIStackView", @"Match", @"FMDB", @"Draw", @"RegularCollection", @"FlowCollection(设置App语言)", @"ClassifyLabelView", @"HorizontalCollection", @"KVCTestViewController"]];
     //[正则表达式](https://www.jianshu.com/p/2b599fc55011)
     [self uiConfig];
     
@@ -66,6 +67,7 @@
 
 - (void)selectCellCallback:(NSIndexPath *)indexPath {
     NSString *className;
+    NSString *indexName = self.dataSource[indexPath.row];
     if (indexPath.row == 0) {
         className = @"LoginViewController";
     } else if (indexPath.row == 1) {
@@ -74,18 +76,20 @@
         showVc.modalPresentationStyle = UIModalPresentationOverCurrentContext | UIModalPresentationFullScreen;
         [self presentViewController:showVc animated:YES completion:nil];
         return;
-    } else if ([self.dataSource[indexPath.row] isEqualToString:@"MenuViewAndUIStackView"]) {
+    } else if ([indexName isEqualToString:@"MenuViewAndUIStackView"]) {
         className = @"MenuLabelViewController";
-    } else if ([self.dataSource[indexPath.row] isEqualToString:@"Draw"]) {
+    } else if ([indexName isEqualToString:@"Draw"]) {
         className = @"DrawViewController";
-    } else if ([self.dataSource[indexPath.row] isEqualToString:@"RegularCollection"]) {
+    } else if ([indexName isEqualToString:@"RegularCollection"]) {
         className = @"VastCollectionViewController";
-    } else if ([self.dataSource[indexPath.row] hasPrefix:@"FlowCollection"]) {
+    } else if ([indexName hasPrefix:@"FlowCollection"]) {
         className = @"FlowCollectionViewController";
-    } else if ([self.dataSource[indexPath.row] isEqualToString:@"ClassifyLabelView"]) {
+    } else if ([indexName isEqualToString:@"ClassifyLabelView"]) {
         className = @"ClassifyLabelViewController";
-    } else if ([self.dataSource[indexPath.row] isEqualToString:@"HorizontalCollection"]) {
+    } else if ([indexName isEqualToString:@"HorizontalCollection"]) {
         className = @"HorizontalCollectionViewController";
+    } else if ([indexName isEqualToString:@"KVCTestViewController"]) {
+        className = @"KVCTestViewController";
     }
     if (className && className.length) {
         Class class = NSClassFromString(className);

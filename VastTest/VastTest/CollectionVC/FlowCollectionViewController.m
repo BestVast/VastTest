@@ -30,6 +30,14 @@
     LanguageXibTestView *xib = [[LanguageXibTestView alloc] init];
     //[[[NSBundle mainBundle] loadNibNamed:@"LanguageXibTestView" owner:self options:nil] firstObject];
     [self.view addSubview:xib];
+    
+    UIButton *btn = [UIButton new];
+    btn.frame = CGRectMake(10, 300, 120, 120);
+    btn.backgroundColor = [UIColor cyanColor];
+    [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [self.view addSubview:btn];
+    [btn setImage:[UIImage imageNamed:@"btn.png"] forState:UIControlStateNormal];
+    btn.imageView.contentMode = UIViewContentModeScaleAspectFit;
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {

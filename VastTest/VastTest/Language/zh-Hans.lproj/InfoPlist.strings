@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  VastTest
+
+  Created by GoodSrc on 2018/10/16.
+  Copyright © 2018年 GoodSrc. All rights reserved.
+*/
+"NSPhotoLibraryUsageDescription" = "是否允許訪問相冊以便保存截圖？";
+"CFBundleDisplayName" = "中文名字";

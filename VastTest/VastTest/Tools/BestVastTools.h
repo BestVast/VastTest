@@ -12,6 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BestVastTools : NSObject
 
+#pragma mark ==获取类中所有属性名==
++ (NSArray *)getPropertysByClass:(Class)byClass;
+#pragma mark ==获取类中所有实例变量名==
++ (NSArray *)getIvarsByClass:(Class)byClass;
 #pragma mark ==printf打印==
 + (void)printObj:(NSString *)obj;
 #pragma mark ==数字字符串转十六进制数==

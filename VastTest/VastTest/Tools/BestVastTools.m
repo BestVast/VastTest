@@ -7,7 +7,7 @@
 //
 
 #import "BestVastTools.h"
-
+#import <objc/runtime.h>
 @implementation BestVastTools
 
 #pragma mark ==printf打印==
@@ -15,6 +15,38 @@
     printf("%s", [[NSString stringWithFormat:@"%@\n", obj] UTF8String]);
 }
 
++ (NSArray *)getPropertysByClass:(Class)byClass {
+    unsigned int count = 0;
+    objc_property_t *property = class_copyPropertyList(byClass, &count);
+    DLog(@"\n count=%d", count);
+    NSMutableArray *array = [[NSMutableArray alloc] initWithCapacity:count];
+    for (int i = 0; i< count; i++) {
+        NSString *propertyName = [NSString stringWithCString:property_getName(property[i]) encoding:NSUTF8StringEncoding];
+        DLog(@"propertyName=%@", propertyName);
+        [array addObject:propertyName];
+
+        NSString *typeName = [NSString stringWithCString:property_getAttributes(property[i]) encoding:NSUTF8StringEncoding];
+        DLog(@"typeName=%@", typeName);
+    }
+    free(property);
+    return array;
+}
+
++ (NSArray *)getIvarsByClass:(Class)byClass {
+    unsigned int icount = 0;
+    Ivar *ivar = class_copyIvarList(byClass, &icount);
+    DLog(@"\n icount=%d", icount);
+    NSMutableArray *array = [[NSMutableArray alloc] initWithCapacity:icount];
+    for (int i = 0; i < icount; i++) {
+        NSString *ivarName = [NSString stringWithUTF8String:ivar_getName(ivar[i])];
+        DLog(@"ivarName=%@", ivarName);
+        [array addObject:ivarName];
+        NSString *ivarType = [NSString stringWithUTF8String:ivar_getTypeEncoding(ivar[i])];
+        DLog(@"ivarType=%@", ivarType);
+    }
+    free(ivar);
+    return array;
+}
 
 #pragma mark ==数字字符串转十六进制数==
 + (unsigned long)getColorHexBy:(NSString *)string {
