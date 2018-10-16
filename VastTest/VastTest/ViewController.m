@@ -35,8 +35,8 @@
     NSString *first = [LanguageHandleTool getStringForKey:@"登录页面MVVM" withTable:@""];
     NSString *second = [LanguageHandleTool getStringForKey:@"弹框页面" withTable:@""];
     
-    self.dataSource = [[NSMutableArray alloc] initWithArray:@[first, second, @"MenuViewAndUIStackView", @"Match", @"FMDB", @"Draw", @"RegularCollection", @"FlowCollection", @"ClassifyLabelView", @"HorizontalCollection"]];
-    //[match](https://www.jianshu.com/p/2b599fc55011)
+    self.dataSource = [[NSMutableArray alloc] initWithArray:@[first, second, @"MenuViewAndUIStackView", @"Match", @"FMDB", @"Draw", @"RegularCollection", @"FlowCollection(设置App语言)", @"ClassifyLabelView", @"HorizontalCollection"]];
+    //[正则表达式](https://www.jianshu.com/p/2b599fc55011)
     [self uiConfig];
     
 }
@@ -80,7 +80,7 @@
         className = @"DrawViewController";
     } else if ([self.dataSource[indexPath.row] isEqualToString:@"RegularCollection"]) {
         className = @"VastCollectionViewController";
-    } else if ([self.dataSource[indexPath.row] isEqualToString:@"FlowCollection"]) {
+    } else if ([self.dataSource[indexPath.row] hasPrefix:@"FlowCollection"]) {
         className = @"FlowCollectionViewController";
     } else if ([self.dataSource[indexPath.row] isEqualToString:@"ClassifyLabelView"]) {
         className = @"ClassifyLabelViewController";
