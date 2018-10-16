@@ -13,7 +13,7 @@
 @implementation LanguageHandleTool
 
 + (NSString *)getLanguage {
-    NSArray *languages = [[NSUserDefaults standardUserDefaults] valueForKey:@"AppleLanguages"];
+    NSArray *languages = [[NSUserDefaults standardUserDefaults] valueForKey:Apple_Languages];
     NSString *currentLanguage = languages.firstObject;
     return currentLanguage;
 }
@@ -21,7 +21,7 @@
 + (void)setLocalLanguage:(NSString *)language {
     
     [NSBundle setLanguage:language];
-    [[NSUserDefaults standardUserDefaults] setValue:@[language] forKey:@"AppleLanguages"];
+    [[NSUserDefaults standardUserDefaults] setValue:@[language] forKey:Apple_Languages];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
@@ -36,17 +36,22 @@
     [UIApplication sharedApplication].delegate.window.rootViewController = vc;
     UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:[[FlowCollectionViewController alloc] init]];
     [vc presentViewController:navi animated:YES completion:nil];
-    DLog(@"%@ \n", [LanguageHandleTool getLanguage]);
+    DLog(@"修改后语言: %@ \n", [LanguageHandleTool getLanguage]);
 }
 
 + (NSString *)getStringForKey:(NSString *)key withTable:(NSString *)table {
     NSString *langu = [self getLanguage];
-    if ([langu isEqualToString:Language_Chinese]) {
+    if ([[langu lowercaseString] hasPrefix:Language_En]) {
+        langu = @"en";
+    } else {
         langu = @"zh-Hans";
     }
-    NSString *path = [[NSBundle mainBundle]pathForResource:langu ofType:@"lproj"];
+    NSString *bundlePath = [[NSBundle mainBundle]pathForResource:@"VastProject" ofType:@"bundle"];
+    NSBundle *vastBundle = [NSBundle bundleWithPath:bundlePath];
+    NSString *path = [vastBundle pathForResource:langu ofType:@"lproj"];
     NSBundle *bundle = [NSBundle bundleWithPath:path];
-    return NSLocalizedStringFromTableInBundle(key, table, bundle, nil);
+    NSString *show = NSLocalizedStringFromTableInBundle(key, table, bundle, nil);
+    return show;
 }
 
 

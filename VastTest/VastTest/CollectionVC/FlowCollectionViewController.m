@@ -35,7 +35,7 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     // en.lproj  zh-Hans.lproj
     // en        zh-Hans-US
-    DLog(@"%@ \n", [LanguageHandleTool getLanguage]);
+    DLog(@"修改前语言: %@ \n", [LanguageHandleTool getLanguage]);
     if (indexPath.row == 0) {
         [LanguageHandleTool setLocalLanguage:Language_Chinese];
     } else if (indexPath.row == 1) {

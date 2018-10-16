@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 #define Language_En      @"en"
 #define Language_Chinese @"zh-Hans-US"
+#define Apple_Languages  @"AppleLanguages"
 @interface LanguageHandleTool : NSObject
 + (NSString *)getLanguage;
 
