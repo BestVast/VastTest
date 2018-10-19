@@ -2,21 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSCameraUsageDescription</key>
-	<string>111</string>
-	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>222</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>333</string>
-    <key>NSHealthUpdateUsageDescription</key>
-    <string>some string value stating the reason</string>
-    <key>NSHealthShareUsageDescription</key>
-    <string>some string value stating the reason</string>
-	<key>NSAppTransportSecurity</key>
-	<dict>
-		<key>NSAllowsArbitraryLoads</key>
-		<true/>
-	</dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -35,6 +20,21 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>111</string>
+	<key>NSHealthShareUsageDescription</key>
+	<string>some string value stating the reason</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>some string value stating the reason</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>222</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>333</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

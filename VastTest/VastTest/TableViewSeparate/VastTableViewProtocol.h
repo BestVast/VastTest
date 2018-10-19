@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-typedef void (^SelectCellBlock) (NSIndexPath *indexPath, id obj);
+typedef void (^SelectCellBlock) (UITableViewCell *cell, NSIndexPath *indexPath, id cellData);
 NS_ASSUME_NONNULL_BEGIN
 
 @interface VastTableViewProtocol : NSObject <UITableViewDelegate, UITableViewDataSource>
@@ -15,7 +15,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy)   SelectCellBlock cellBlock;
 
 // 初始化方法
-- (instancetype)initWithDataSource:(NSMutableArray *)dataSource;
+- (instancetype)initWithDataSource:(NSMutableArray *)dataSource
+                    CellIdentifier:(NSString *)identifier
+                   configCellBlock:(SelectCellBlock)cellBlock;
 @end
 
 NS_ASSUME_NONNULL_END

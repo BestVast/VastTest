@@ -124,6 +124,7 @@
 		FD61AFD721422666006BC7AC /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = FD61AFCF21422666006BC7AC /* FMDatabase.m */; };
 		FD61AFD821422666006BC7AC /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = FD61AFD221422666006BC7AC /* FMDatabasePool.m */; };
 		FD61AFD921422666006BC7AC /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = FD61AFD321422666006BC7AC /* FMResultSet.m */; };
+		FD81CBAB21772EAC00FACEDA /* UIButton+VastRepeatClick.m in Sources */ = {isa = PBXBuildFile; fileRef = FD81CBAA21772EAC00FACEDA /* UIButton+VastRepeatClick.m */; };
 		FD865DA4213E256A0098A852 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FD865D8B213E25690098A852 /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		FD865DA5213E256A0098A852 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FD865D94213E25690098A852 /* ViewController+MASAdditions.m */; };
 		FD865DA6213E256A0098A852 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = FD865D98213E25690098A852 /* MASCompositeConstraint.m */; };
@@ -388,6 +389,8 @@
 		FD61AFD121422666006BC7AC /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
 		FD61AFD221422666006BC7AC /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
 		FD61AFD321422666006BC7AC /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		FD81CBA921772EAC00FACEDA /* UIButton+VastRepeatClick.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+VastRepeatClick.h"; sourceTree = "<group>"; };
+		FD81CBAA21772EAC00FACEDA /* UIButton+VastRepeatClick.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+VastRepeatClick.m"; sourceTree = "<group>"; };
 		FD865D8A213E25690098A852 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		FD865D8B213E25690098A852 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
 		FD865D8C213E25690098A852 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
@@ -643,8 +646,7 @@
 				FD5A769F21181FCC00699CED /* AppDelegate */,
 				FD1BF2082106C385001141AB /* ViewController.h */,
 				FD1BF2092106C385001141AB /* ViewController.m */,
-				FD2BB214213FD31D00FB6A38 /* VastTableViewProtocol.h */,
-				FD2BB215213FD31D00FB6A38 /* VastTableViewProtocol.m */,
+				FDA0A1CC2179AE65004AAB3C /* TableViewSeparate */,
 				FD0119A92175D24B00747AA9 /* RSATest */,
 				FD0119592175817F00747AA9 /* KVCTest */,
 				FDD7F54121747D88005AFB24 /* Language */,
@@ -706,6 +708,8 @@
 		FD1BF22B2106D59B001141AB /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				FD81CBA921772EAC00FACEDA /* UIButton+VastRepeatClick.h */,
+				FD81CBAA21772EAC00FACEDA /* UIButton+VastRepeatClick.m */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -1000,6 +1004,15 @@
 			path = CollectionVC;
 			sourceTree = "<group>";
 		};
+		FDA0A1CC2179AE65004AAB3C /* TableViewSeparate */ = {
+			isa = PBXGroup;
+			children = (
+				FD2BB214213FD31D00FB6A38 /* VastTableViewProtocol.h */,
+				FD2BB215213FD31D00FB6A38 /* VastTableViewProtocol.m */,
+			);
+			path = TableViewSeparate;
+			sourceTree = "<group>";
+		};
 		FDD7F54121747D88005AFB24 /* Language */ = {
 			isa = PBXGroup;
 			children = (
@@ -1237,6 +1250,7 @@
 				FD1B75582122806A004A09C8 /* LabelListView.m in Sources */,
 				FD25932121105CE500014FC6 /* AFURLSessionManager.m in Sources */,
 				FD865DA8213E256A0098A852 /* MASLayoutConstraint.m in Sources */,
+				FD81CBAB21772EAC00FACEDA /* UIButton+VastRepeatClick.m in Sources */,
 				FD0119DF2175DF2300747AA9 /* MJPropertyKey.m in Sources */,
 				FD25931F21105CE500014FC6 /* AFURLResponseSerialization.m in Sources */,
 				FD1BF21D2106C4E1001141AB /* BestVastTools.m in Sources */,
@@ -1480,7 +1494,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8S343JTZGV;
+				DEVELOPMENT_TEAM = S748494QV4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/VastTest/Libs/YYImage/Vendor",
@@ -1493,7 +1507,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.vast.VastTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.goodsrc.PrecisionExperiment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1504,7 +1518,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8S343JTZGV;
+				DEVELOPMENT_TEAM = S748494QV4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/VastTest/Libs/YYImage/Vendor",
@@ -1517,7 +1531,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.vast.VastTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.goodsrc.PrecisionExperiment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

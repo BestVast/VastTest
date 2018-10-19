@@ -9,6 +9,7 @@
 #import "KVCTestViewController.h"
 #import "KVCDog.h"
 #import <objc/runtime.h>
+#import "UIButton+VastRepeatClick.h"
 @interface KVCTestViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *kvcTestBtn;
 
@@ -25,6 +26,20 @@
     
     id i = [self performSelector:@selector(foo:) withObject:@"123"];
     DLog(@"%@", i);
+    
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = CGRectMake((SCREEN_WIDTH - 200) / 2, 260, 200, 50);
+    [btn setTitle:@"5s防重复点击" forState:UIControlStateNormal];
+    [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    btn.backgroundColor = [UIColor cyanColor];
+    btn.timeInterval = 5;
+    [self.view addSubview:btn];
+    [btn addTarget:self action:@selector(clickRepeat:) forControlEvents:UIControlEventTouchUpInside];
+}
+- (void)clickRepeat:(UIButton *)btn {
+    DLog(@"clickRepeat");
+    NSString *title = btn.titleLabel.text;
+    [btn setTitle:[title stringByAppendingString:@"-1"] forState:UIControlStateNormal];
 }
 - (IBAction)clickKVCTestButton:(id)sender {
     UIButton *btn = sender;
@@ -39,7 +54,7 @@
     DLog(@"%@", [_dog dictionaryWithValuesForKeys:@[@"isName", @"_isName"]]);
 }
 
-
+// [掘金: iOS Runtime详解](https://juejin.im/post/5ac0a6116fb9a028de44d717)
 + (BOOL)resolveInstanceMethod:(SEL)sel {
     if (sel == @selector(foo:)) {
         class_addMethod([self class], sel, (IMP)foo1, "");

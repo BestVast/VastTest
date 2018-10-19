@@ -33,24 +33,28 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    NSString *first = [LanguageHandleTool getStringForKey:@"登录页面MVVM" withTable:@""];
-    NSString *second = [LanguageHandleTool getStringForKey:@"弹框页面" withTable:@""];
     
-    self.dataSource = [[NSMutableArray alloc] initWithArray:@[first, second, @"MenuViewAndUIStackView", @"Match", @"FMDB", @"Draw", @"RegularCollection", @"FlowCollection(设置App语言)", @"ClassifyLabelView", @"HorizontalCollection", @"KVCTestViewController"]];
+    [self dataConfig];
     //[正则表达式](https://www.jianshu.com/p/2b599fc55011)
     [self uiConfig];
     
 }
 
+- (void)dataConfig {
+    NSString *first = [LanguageHandleTool getStringForKey:@"登录页面MVVM" withTable:@""];
+    NSString *second = [LanguageHandleTool getStringForKey:@"弹框页面" withTable:@""];
+    
+    self.dataSource = [[NSMutableArray alloc] initWithArray:@[first, second, @"MenuViewAndUIStackView", @"Match", @"FMDB", @"Draw", @"RegularCollection", @"FlowCollection and 设置App语言", @"ClassifyLabelView", @"HorizontalCollection", @"KVC and 防止连续点击btn"]];
+}
 - (void)uiConfig {
     self.view.backgroundColor = [UIColor whiteColor];
     UITableView *table = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT*0.9) style:UITableViewStylePlain];
-    //VastTableViewProtocol 必须为全局变量
-    _protocol = [[VastTableViewProtocol alloc] initWithDataSource:self.dataSource];
+    
     @WeakObj(self);
-    _protocol.cellBlock = ^(NSIndexPath *indexPath, id obj) {
+    //VastTableViewProtocol 必须为全局变量
+    _protocol = [[VastTableViewProtocol alloc] initWithDataSource:self.dataSource CellIdentifier:@"cell" configCellBlock:^(UITableViewCell *cell, NSIndexPath *indexPath, id cellData) {
         [selfWeak selectCellCallback:indexPath];
-    };
+    }];
     table.delegate = _protocol;
     table.dataSource = _protocol;
     [self.view addSubview:table];
@@ -88,7 +92,7 @@
         className = @"ClassifyLabelViewController";
     } else if ([indexName isEqualToString:@"HorizontalCollection"]) {
         className = @"HorizontalCollectionViewController";
-    } else if ([indexName isEqualToString:@"KVCTestViewController"]) {
+    } else if ([indexName containsString:@"KVC"]) {
         className = @"KVCTestViewController";
     }
     if (className && className.length) {

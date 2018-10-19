@@ -16,6 +16,8 @@
  [iOS 国际化详解以及自动化脚本](https://juejin.im/entry/593140442f301e006bdbdf05)
  [IOS开发之国际化localization多语言支持](http://www.hudongdong.com/ios/393.html#menu_index_4)
  */
+
+#warning mark ==需要加本地存储 Language==
 + (NSString *)getLanguage {
     NSArray *languages = [[NSUserDefaults standardUserDefaults] valueForKey:Apple_Languages];
     NSString *currentLanguage = languages.firstObject;

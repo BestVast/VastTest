@@ -9,10 +9,13 @@
 #import "VastTableViewProtocol.h"
 
 @implementation VastTableViewProtocol
-- (instancetype)initWithDataSource:(NSMutableArray *)dataSource {
+- (instancetype)initWithDataSource:(NSMutableArray *)dataSource CellIdentifier:(nonnull NSString *)identifier configCellBlock:(nonnull SelectCellBlock)cellBlock {
     if (self = [super init]) {
         DLog(@"%@", dataSource);
         self.dataSource = dataSource;
+        if (cellBlock) {
+            self.cellBlock = cellBlock;
+        }
     }
     return self;
 }
@@ -22,7 +25,8 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if (self.cellBlock) {
-        self.cellBlock(indexPath, nil);
+        UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+        self.cellBlock(cell ,indexPath, nil);
     }
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
