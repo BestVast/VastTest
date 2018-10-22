@@ -124,6 +124,8 @@
 		FD61AFD721422666006BC7AC /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = FD61AFCF21422666006BC7AC /* FMDatabase.m */; };
 		FD61AFD821422666006BC7AC /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = FD61AFD221422666006BC7AC /* FMDatabasePool.m */; };
 		FD61AFD921422666006BC7AC /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = FD61AFD321422666006BC7AC /* FMResultSet.m */; };
+		FD76F613217D9C49006D16E5 /* bookmarks_2018_10_22.html in Resources */ = {isa = PBXBuildFile; fileRef = FD76F612217D9C48006D16E5 /* bookmarks_2018_10_22.html */; };
+		FD76F616217D9C98006D16E5 /* ParseDocViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD76F615217D9C98006D16E5 /* ParseDocViewController.m */; };
 		FD81CBAB21772EAC00FACEDA /* UIButton+VastRepeatClick.m in Sources */ = {isa = PBXBuildFile; fileRef = FD81CBAA21772EAC00FACEDA /* UIButton+VastRepeatClick.m */; };
 		FD865DA4213E256A0098A852 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FD865D8B213E25690098A852 /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		FD865DA5213E256A0098A852 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FD865D94213E25690098A852 /* ViewController+MASAdditions.m */; };
@@ -137,6 +139,7 @@
 		FD865DAD213E256A0098A852 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = FD865DA2213E25690098A852 /* MASViewAttribute.m */; };
 		FD865DAE213E256A0098A852 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FD865DA3213E25690098A852 /* Info.plist */; };
 		FD97BC032111B5FC00A1500E /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD97BC022111B5FC00A1500E /* LoginViewController.m */; };
+		FDD1A01E217DC5D100FFD92A /* SplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD1A01D217DC5D100FFD92A /* SplitViewController.m */; };
 		FDD7F51A217460EC005AFB24 /* LanguageXibTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD7F519217460EC005AFB24 /* LanguageXibTestView.m */; };
 		FDD7F53221746CF1005AFB24 /* LanguageXibTestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDD7F53421746CF1005AFB24 /* LanguageXibTestView.xib */; };
 		FDD7F53E21747323005AFB24 /* NSBundle+Language.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD7F53D21747323005AFB24 /* NSBundle+Language.m */; };
@@ -389,6 +392,9 @@
 		FD61AFD121422666006BC7AC /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
 		FD61AFD221422666006BC7AC /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
 		FD61AFD321422666006BC7AC /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		FD76F612217D9C48006D16E5 /* bookmarks_2018_10_22.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = bookmarks_2018_10_22.html; sourceTree = "<group>"; };
+		FD76F614217D9C98006D16E5 /* ParseDocViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParseDocViewController.h; sourceTree = "<group>"; };
+		FD76F615217D9C98006D16E5 /* ParseDocViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParseDocViewController.m; sourceTree = "<group>"; };
 		FD81CBA921772EAC00FACEDA /* UIButton+VastRepeatClick.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+VastRepeatClick.h"; sourceTree = "<group>"; };
 		FD81CBAA21772EAC00FACEDA /* UIButton+VastRepeatClick.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+VastRepeatClick.m"; sourceTree = "<group>"; };
 		FD865D8A213E25690098A852 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
@@ -419,6 +425,8 @@
 		FD865DA3213E25690098A852 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD97BC012111B5FC00A1500E /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		FD97BC022111B5FC00A1500E /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		FDD1A01C217DC5D100FFD92A /* SplitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplitViewController.h; sourceTree = "<group>"; };
+		FDD1A01D217DC5D100FFD92A /* SplitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplitViewController.m; sourceTree = "<group>"; };
 		FDD7F518217460EC005AFB24 /* LanguageXibTestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LanguageXibTestView.h; sourceTree = "<group>"; };
 		FDD7F519217460EC005AFB24 /* LanguageXibTestView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LanguageXibTestView.m; sourceTree = "<group>"; };
 		FDD7F53321746CF1005AFB24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LanguageXibTestView.xib; sourceTree = "<group>"; };
@@ -655,6 +663,8 @@
 				FD9F2ACC21199C240030DF6A /* CollectionVC */,
 				FD9F2ACB21199C0F0030DF6A /* DrawVC */,
 				FD97BC002111539300A1500E /* MVVM */,
+				FD76F611217D9C48006D16E5 /* ParseDoc */,
+				FDD1A01B217DC5A400FFD92A /* SplitVc */,
 				FD5A76A3211825C100699CED /* presentVc */,
 				FD5A76A4211825FA00699CED /* menuVc */,
 				FD2592E221105CE500014FC6 /* Libs */,
@@ -905,6 +915,16 @@
 			path = src;
 			sourceTree = "<group>";
 		};
+		FD76F611217D9C48006D16E5 /* ParseDoc */ = {
+			isa = PBXGroup;
+			children = (
+				FD76F612217D9C48006D16E5 /* bookmarks_2018_10_22.html */,
+				FD76F614217D9C98006D16E5 /* ParseDocViewController.h */,
+				FD76F615217D9C98006D16E5 /* ParseDocViewController.m */,
+			);
+			path = ParseDoc;
+			sourceTree = "<group>";
+		};
 		FD7E82DC212673130076BF2C /* TagLayout */ = {
 			isa = PBXGroup;
 			children = (
@@ -1011,6 +1031,15 @@
 				FD2BB215213FD31D00FB6A38 /* VastTableViewProtocol.m */,
 			);
 			path = TableViewSeparate;
+			sourceTree = "<group>";
+		};
+		FDD1A01B217DC5A400FFD92A /* SplitVc */ = {
+			isa = PBXGroup;
+			children = (
+				FDD1A01C217DC5D100FFD92A /* SplitViewController.h */,
+				FDD1A01D217DC5D100FFD92A /* SplitViewController.m */,
+			);
+			path = SplitVc;
 			sourceTree = "<group>";
 		};
 		FDD7F54121747D88005AFB24 /* Language */ = {
@@ -1145,6 +1174,7 @@
 				FD011965217585C500747AA9 /* KVCTestViewController.xib in Resources */,
 				FD258EC0211012D100014FC6 /* 难题2.png in Resources */,
 				FD258EC1211012D100014FC6 /* 难题3.png in Resources */,
+				FD76F613217D9C49006D16E5 /* bookmarks_2018_10_22.html in Resources */,
 				FD2C0A542112E80E00ADAEC9 /* MVVM3.png in Resources */,
 				FD2C0A552112E80E00ADAEC9 /* MVC2.png in Resources */,
 				FD54A15B2147C3FF00B8C579 /* btn.png in Resources */,
@@ -1194,6 +1224,7 @@
 				FD1B75642122D413004A09C8 /* GTagSimpleCollectionHeadView.m in Sources */,
 				FD01199D2175C45E00747AA9 /* MJRefreshBackNormalFooter.m in Sources */,
 				FD61AFC421422654006BC7AC /* FmdbHelper.m in Sources */,
+				FDD1A01E217DC5D100FFD92A /* SplitViewController.m in Sources */,
 				FD0119DC2175DF2300747AA9 /* NSObject+MJProperty.m in Sources */,
 				FD61AFD621422666006BC7AC /* FMDatabaseAdditions.m in Sources */,
 				FD25931621105CE500014FC6 /* UIProgressView+AFNetworking.m in Sources */,
@@ -1252,6 +1283,7 @@
 				FD865DA8213E256A0098A852 /* MASLayoutConstraint.m in Sources */,
 				FD81CBAB21772EAC00FACEDA /* UIButton+VastRepeatClick.m in Sources */,
 				FD0119DF2175DF2300747AA9 /* MJPropertyKey.m in Sources */,
+				FD76F616217D9C98006D16E5 /* ParseDocViewController.m in Sources */,
 				FD25931F21105CE500014FC6 /* AFURLResponseSerialization.m in Sources */,
 				FD1BF21D2106C4E1001141AB /* BestVastTools.m in Sources */,
 				FD011964217585C500747AA9 /* KVCTestViewController.m in Sources */,

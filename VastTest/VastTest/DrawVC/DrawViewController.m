@@ -39,7 +39,7 @@
      */
     
     dispatch_semaphore_t sema = dispatch_semaphore_create(5);
-    for (int i = 0; i < 30; i++) {
+    for (int i = 0; i < 10; i++) {
         dispatch_semaphore_wait(sema, DISPATCH_TIME_FOREVER);
         
         NSLog(@"%d", i+3);

@@ -44,7 +44,7 @@
     NSString *first = [LanguageHandleTool getStringForKey:@"登录页面MVVM" withTable:@""];
     NSString *second = [LanguageHandleTool getStringForKey:@"弹框页面" withTable:@""];
     
-    self.dataSource = [[NSMutableArray alloc] initWithArray:@[first, second, @"MenuViewAndUIStackView", @"Match", @"FMDB", @"Draw", @"RegularCollection", @"FlowCollection and 设置App语言", @"ClassifyLabelView", @"HorizontalCollection", @"KVC and 防止连续点击btn"]];
+    self.dataSource = [[NSMutableArray alloc] initWithArray:@[first, second, @"MenuViewAndUIStackView", @"Match", @"FMDB", @"Draw", @"RegularCollection", @"FlowCollection and 设置App语言", @"ClassifyLabelView", @"HorizontalCollection", @"KVC and 防止连续点击btn", @"ParseDocViewController"]];
 }
 - (void)uiConfig {
     self.view.backgroundColor = [UIColor whiteColor];
@@ -94,12 +94,17 @@
         className = @"HorizontalCollectionViewController";
     } else if ([indexName containsString:@"KVC"]) {
         className = @"KVCTestViewController";
+    } else if ([indexName containsString:@"ParseDocViewController"]) {
+        className = @"ParseDocViewController";
     }
     if (className && className.length) {
         Class class = NSClassFromString(className);
         UIViewController *listVc = [[class alloc] init];
-        UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController: listVc];
-        [self presentViewController:navi animated:YES completion:nil];
+//        UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController: listVc];
+//        [self presentViewController:navi animated:YES completion:nil];
+        //获取详细控制器
+        UINavigationController *detailNAV = [self.splitViewController.viewControllers lastObject];
+        detailNAV.viewControllers = @[listVc];
     }
 }
 
