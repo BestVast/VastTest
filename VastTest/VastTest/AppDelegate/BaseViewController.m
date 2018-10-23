@@ -26,6 +26,22 @@
         self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(backUpper)];
     }
 }
+
+- (CGFloat)viewWidth {
+    UINavigationController *mastNavi = self.splitViewController.viewControllers.firstObject;
+    UIViewController *vc = mastNavi.topViewController;
+    DLog(@"mastWidth-> %f", vc.view.bounds.size.width);
+    DLog(@"width-> %f, screenWidth-> %f", (self.view.bounds.size.width), SCREEN_WIDTH);
+    CGFloat width = self.view.bounds.size.width;
+    CGFloat masterWidth = vc.view.bounds.size.width;
+    if (width == SCREEN_WIDTH
+        && masterWidth < SCREEN_WIDTH) {
+        width = SCREEN_WIDTH - masterWidth;
+    }
+    return width;
+}
+
+
 - (void)backUpper {
     if (self.navigationController.viewControllers
         && ![self.navigationController.viewControllers.firstObject isEqual:self]) {

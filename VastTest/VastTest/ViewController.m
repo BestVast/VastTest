@@ -47,8 +47,9 @@
     self.dataSource = [[NSMutableArray alloc] initWithArray:@[first, second, @"MenuViewAndUIStackView", @"Match", @"FMDB", @"Draw", @"RegularCollection", @"FlowCollection and 设置App语言", @"ClassifyLabelView", @"HorizontalCollection", @"KVC and 防止连续点击btn", @"ParseDocViewController"]];
 }
 - (void)uiConfig {
+    self.navigationItem.title = @"列表页面";
     self.view.backgroundColor = [UIColor whiteColor];
-    UITableView *table = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT*0.9) style:UITableViewStylePlain];
+    UITableView *table = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, SCREEN_HEIGHT*0.9) style:UITableViewStylePlain];
     
     @WeakObj(self);
     //VastTableViewProtocol 必须为全局变量
