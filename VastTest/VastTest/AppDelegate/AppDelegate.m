@@ -44,8 +44,9 @@
     //设置代理
     self.splitViewController.delegate = self;
     //设置window的根控制器
-    self.window.rootViewController = self.splitViewController;
+//    self.window.rootViewController = self.splitViewController;
     
+    // com.goodsrc.PrecisionExperiment
     return YES;
 }
 
