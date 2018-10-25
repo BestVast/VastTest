@@ -36,11 +36,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VastTest/MVVM/LoginViewController.m"
-            timestampString = "561976644.797582"
+            timestampString = "562138366.8304501"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
             landmarkName = "-viewRefreshByWidth"
             landmarkType = "7">
          </BreakpointContent>

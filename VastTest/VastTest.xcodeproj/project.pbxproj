@@ -148,6 +148,7 @@
 		FD61AFD721422666006BC7AC /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = FD61AFCF21422666006BC7AC /* FMDatabase.m */; };
 		FD61AFD821422666006BC7AC /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = FD61AFD221422666006BC7AC /* FMDatabasePool.m */; };
 		FD61AFD921422666006BC7AC /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = FD61AFD321422666006BC7AC /* FMResultSet.m */; };
+		FD6447AA2181504C001E674A /* VastMagnifierTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FD6447A92181504C001E674A /* VastMagnifierTool.m */; };
 		FD76F613217D9C49006D16E5 /* bookmarks_2018_10_22.html in Resources */ = {isa = PBXBuildFile; fileRef = FD76F612217D9C48006D16E5 /* bookmarks_2018_10_22.html */; };
 		FD76F616217D9C98006D16E5 /* ParseDocViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD76F615217D9C98006D16E5 /* ParseDocViewController.m */; };
 		FD81CBAB21772EAC00FACEDA /* UIButton+VastRepeatClick.m in Sources */ = {isa = PBXBuildFile; fileRef = FD81CBAA21772EAC00FACEDA /* UIButton+VastRepeatClick.m */; };
@@ -464,6 +465,8 @@
 		FD61AFD121422666006BC7AC /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
 		FD61AFD221422666006BC7AC /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
 		FD61AFD321422666006BC7AC /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		FD6447A82181504C001E674A /* VastMagnifierTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VastMagnifierTool.h; sourceTree = "<group>"; };
+		FD6447A92181504C001E674A /* VastMagnifierTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VastMagnifierTool.m; sourceTree = "<group>"; };
 		FD76F612217D9C48006D16E5 /* bookmarks_2018_10_22.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = bookmarks_2018_10_22.html; sourceTree = "<group>"; };
 		FD76F614217D9C98006D16E5 /* ParseDocViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ParseDocViewController.h; sourceTree = "<group>"; };
 		FD76F615217D9C98006D16E5 /* ParseDocViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParseDocViewController.m; sourceTree = "<group>"; };
@@ -726,6 +729,7 @@
 				FD5A769F21181FCC00699CED /* AppDelegate */,
 				FD1BF2082106C385001141AB /* ViewController.h */,
 				FD1BF2092106C385001141AB /* ViewController.m */,
+				FD6447A721815031001E674A /* Magnifier */,
 				FDA0A1CC2179AE65004AAB3C /* TableViewSeparate */,
 				FD0119A92175D24B00747AA9 /* RSATest */,
 				FD0119592175817F00747AA9 /* KVCTest */,
@@ -1057,6 +1061,15 @@
 				FD61AFD321422666006BC7AC /* FMResultSet.m */,
 			);
 			path = src;
+			sourceTree = "<group>";
+		};
+		FD6447A721815031001E674A /* Magnifier */ = {
+			isa = PBXGroup;
+			children = (
+				FD6447A82181504C001E674A /* VastMagnifierTool.h */,
+				FD6447A92181504C001E674A /* VastMagnifierTool.m */,
+			);
+			path = Magnifier;
 			sourceTree = "<group>";
 		};
 		FD76F611217D9C48006D16E5 /* ParseDoc */ = {
@@ -1481,6 +1494,7 @@
 				FD0119B92175D29C00747AA9 /* CustomView.m in Sources */,
 				FD865DAB213E256A0098A852 /* MASConstraint.m in Sources */,
 				FD35372621800F1600C1BF93 /* SVIndefiniteAnimatedView.m in Sources */,
+				FD6447AA2181504C001E674A /* VastMagnifierTool.m in Sources */,
 				FD25932321105CE500014FC6 /* AFNetworkReachabilityManager.m in Sources */,
 				FD0119A42175C45E00747AA9 /* MJRefreshFooter.m in Sources */,
 				FD1BF22F2106D706001141AB /* ShowViewController.m in Sources */,
