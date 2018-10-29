@@ -1,3 +1,408 @@
 "弹框页面"     = "Alert Page View";
 "登录页面MVVM" = "Login Page MVVM";
 "设置语言"     = "Set Language";
+
+/*
+ Localizable.strings
+ KingDraw
+ 
+ Created by GoodSrc on 2018/9/10.
+ Copyright © 2018年 Mask. All rights reserved.
+ */
+
+// 版本更新 UpDataAlertView
+"ThisUpdate"      = "This update:";
+"AddTagAction"    = "新增标签功能，为文件添加标签，方便文件管理。";
+"AddSearchAction" = "新增子结构搜索功能，快速找到您想要的！";
+"NewVersionIntro" = "New version introduction";
+"IKnow"           = "Get it";
+
+// 首页配置
+"ConfigFileWait" = "The configuration file is being deployed, please wait!";
+"ConfigDeployed" = "Configuration is deployed!";
+"UpdateDateWait" = "Updating data, please wait!";
+"UpdateComplete" = "Update completed!";
+
+"Delete"      = "Delete";
+"Cancel"      = "Cancel";
+"Confirm"     = "Confirm";
+"Complete"    = "Complete";
+"Share"       = "Share";
+"ShareSuccess"= "Successfully shared";
+"Warning"     = "Warning";
+"GoSettingOpenSwitch" = "Please go to-> [Settings-Privacy-Albums]. Open the access switch.";
+"GoSetting"   = "Go to set";
+"Saving"      = "Being saved";
+"SaveToAlbum" = "Saved to album";
+
+"Login"      =   "Log in";
+"Register"   =   "Register";
+"MyFile"     =   "Mydocuments";
+"AppSet"     =   "Softwaresetting";
+"SynList"    =   "List synchronization";
+"Feedback"   =   "Feedback";
+"AboutUs"    =   "About us";
+"Password"   =   "Change password";
+
+
+// 完善资料 UserInfoViewController
+"PerfectInfo"       = "Complete the information";
+"PersonalInfo"      = "Personal data";
+"PhoneNum"          = "Cell phone";
+"Email"             = "E-mail";
+"IndustryCategory"  = "Industry category";
+"EnterEmailAddress" = "Please enter your E-mail address";
+"PleaseSelect"      = "Please select";
+"AcquisitionFailed" = "Acquisition failed";
+"EnterVaildEmail"   = "Please enter correct E-mail address";
+
+
+// 我的文件 - 本地
+"Local"       = "Local";
+"Cloud"       = "Cloud";
+"Upload"      = "Upload";
+"Download"    = "Download";
+"UploadFail"  = "Upload failed";
+"WaitUpload"  = "Waiting for upload";
+"WaitDownload"= "Waiting for download";
+"Search"      = "Search";
+"Preview"     = "Preview mode";
+"List"        = "List mode";
+"Batch"       = "Batch operation";
+"UTCloud"     = "Upload to cloud";
+"SelectUploadFile"    = "Please select the file you want to upload!";
+"GetUploadFileWait"   = "Getting the file you needed to upload, please wait!";
+"SelectDeleteFile"    = "Please select the file you want to delete!";
+"LocalDbDeleteFail"   = "Failed to delete local database";
+"FileUploadingWait"   = "The file is being uploaded, please wait!";
+"FileUploadFailReset" = "File upload failed, please re-upload in the sync list!";
+// 首页列表操作 BottomOperationView
+"CheckAll"    = "Select all";
+"Selected"    = "Have selected";
+"Number"      = "";
+"DeletingFile!"  = "Deleting file, please wait!";
+//"您确认删除...等...个文件吗？删除确认后将无法找回！";
+"ConfirmDelete?" = "You confirm the deletion of";
+"SoOn" = "Etc";
+"DeleteConfirm!" = "Documents? After deleting confirmed, you will not be able to retrieve it!";
+"DeleteSuccess!" = "successfully deleted!";
+"SaveAlbum"   = "Save to photo album";
+"SaveAs"      = "Save as";
+"ShareFile"   = "Share file";
+"ShareingFile"= "Sharing files";
+"FileAttrib"  = "File attribute";
+"Rename"      = "Re-name";
+"Copy"        = "Copy";
+"ExportSuccess" = "Successfully exported";
+// 您确认将本地文件“%@”上传到云端吗？
+"ConfirmLocalFile" = " Are you sure you want to upload the local file";
+"UploadCloud?"     = "to the cloud?";
+"UploadMiddle..."  = "Uploading";
+"UploadSuccess"    = "Successfully uploaded";
+"UploadFail"       = "Upload failed";
+"Replace"          = "Substitute";
+"ReplaceSuccess"   = "Successfully replaced";
+"ReplaceFail"      = "Replacement failed";
+"KeepBoth"         = "Retain both";
+"FileNoExist"      = "File does not exist";
+"FileExist"        = "File already exists";
+"FileWriteFail"    = "File write failed";
+// "本地文件“...”与云端文件“...”标识相同，“替换”后会覆盖云端文件，“保留二者”后会自动重命名并上传云端。"
+"LocalFile"        = "Local files";
+"AndCloudFile"     = "and cloud files";
+"CompareLocalAndCloudFile" = "The logo is the same. When replacing, it will overwrite the cloud file. After retain both, it will automatically rename and upload to the cloud.";
+// 文件属性 FileInfoController
+"FileName"    = "File name";
+"Struction"   = "Structural formula";
+"Size"        = "Size";
+"Format"      = "Format";
+"CreatTime"   = "Creation time";
+"ChangeTime"  = "Modification time";
+
+// 我的文件 - 云端
+"PCUrl"         =  "Visit cloud.kingdraw.cn on PC to download file";  // 未找到
+"DownloadLocal" =  "Download to local";
+"CloudSave"     =  "Cloud storage";
+"OpenCloudSave" =  "Open cloud storage, log in by your phone number, and the data will not lost from here.";
+"NowLogin"      =  "Log in now";
+"NoLogin"       =  "Log in later";
+"RenameSuccess" =  "Re-naming succeeded";
+"RenameFail"    =  "Re-naming failed";
+// 确认删除“%@”吗？删除确认后无法找回，谨慎选择！
+"ConfirmDel"          = "Are you sure to delete";
+"DeleteConfirmation!" = "? After deleting confirmation, you will not be able to retrieve it. Please choose carefully!";
+// 您确认将云端文件“%@”下载到本地吗？
+"ConfirmCloudFile"  = "Are you sure you want to download the cloud file";
+"DownloadLocal?"    = "locally?";
+"Downloading..."    = "Downloading";
+"DownloadSuccess"   = "Downloading succeeded";
+"DownloadFail"      = "Downloading failed";
+"DownloadFail!"     = "Downloading failed!";
+// 云端文件“%@”与本地文件“%@”标识相同，“替换”后会覆盖本地文件，“保留二者”后会自动重命名并下载到本地。
+"CloudFile"         = "Local files";
+"AndLocalFile"      = "and cloud files";
+"CompareCloudAndLocalFile" = "the logo is the same. When replacing, it will overwrite the cloud file. After retain both, it will automatically rename and upload to the cloud.
+";
+"FileDownloadFail"    = "File download failed, please re-download in the sync list!";
+"FileDownloading"     = "The file is being downloaded, please wait!";
+"SelectDownloadFile"  = "Please select the file you want to download!";
+"GetNeedDeleteFile"   = "Getting the file you need to delete, please wait!";
+"GetNeedDownloadFile" = "Getting the file you need to download, please wait!";
+// SynchronizationListController
+// "与服务器链接中断文件“%@”下载失败，请重新操作。"
+"ServerLinkInterrupt" = "Interrupt file with server link";
+"DownloadFailReset."  = "download failed, please re-do it.";
+"AgainDownload"       = "Re-download";
+"CancelDownload"      = "Cancel download";
+"ProgressLater"       = "Dispose later";
+// "与服务器链接中断文件“%@”上传失败，请重新操作。"
+"UploadFailTryAgain"  = "Upload failed, please re-do it.";
+"ResetUpload"         = "Re-upload";
+"CancelUpload"        = "Cancel upload";
+
+
+
+
+// 分组标签
+"TagGroup"     = "Grouping label";
+"TagManage"    = "Label management";
+"Edit"         = "Edit";
+"TagEdit"      = "Edit label";
+"TagAdd"       = "Add new label";
+"InputTagName" = "Please enter a tag name!";
+"TenChinese"   = "Up to 10 Chinese characters!";
+"TwentyLetter" = "Up to 20 English characters!";
+"TagSaving"    = "Saving label";
+"SaveSuccess"  = "Successfully saved!";
+"TagExist"     = "Label already exist!";
+"Prompt"       = "Warm prompt";
+"DeleteTag?"   = "Confirm to delete this grouping label?";
+"Deleting"     = "Deleting";
+"NotSave"      = "This tag has not been saved!";
+"DeleteSuccess"= "successfully deleted";
+"DeleteFail"   = "Deleting failed";
+"SaveChange?"  = "Do you want to save this change?";
+"NoSave"       = "Do not save";
+"Save"         = "Save";
+"TagName"            = "Tag name";
+"TagNameLimitLength" = "Up to 10 Chinese characters in Chinese, up to 20 characters in English";
+"SectionFile"        = "Grouping files";
+"Addition"           = "Add";
+"SelectedTag"        = "Selected tag";
+"MoreTag"            = "More tag ";
+"AddFilterTag"       = "Add filter tag";
+"AddManageTag"       = "Add management tags";
+"SearchHistory"            = "Search history";
+"ClearSearchHistory"       = "Are you sure you want to clear your search history?";
+"EnterFileNameToSearch"    = "Please enter a file name to search";
+"EnterSearchContent"       = "Please enter search content";
+"SubstructureSearch"       = "    Sub-structural formula searching";
+"NoAddGroupTag"            = "Grouping label has not been added";
+"DeleteTag"      = "Delete tag";
+"AddGroupFile"   = "Add group files";
+
+
+// 画板
+"Unnamed"      =  "Unnamed";
+"Once"         =  "Single";
+"Continue"     =  "Continuous";
+"DrawContent"  =  "Please draw the content first";
+"Saveing!"     =  "Saving! please wait!";
+"PeriodicTableRemark"    = "Note: Press on an element to automatically join the frequently used list";
+"RemoveClickSubstituent" = "Whether to delete the clicked substituent";
+"CommonGroup"            = "Common groups";
+// TopBarView
+"Topping"        = "Top";
+"SetEnd"         = "Bottom";
+"PaletteNoEle"   = "No chemical elements on the artboard";
+"CopySuccess"    = "Copy succeeded";
+"CopyFail"       = "Copy failed";
+"TitleNoEmpty"   = "The title cannot be empty";
+"SaveAsSuccess!" = "Saving succeeded!";
+"SaveAsFail"     = "Saving failed";
+"ShareToOthers"  = "Share with others";
+"SaveAndShare"   = "Save and share";
+"ClearHistory"   = "Clear history";
+"NoHistory"      = "No history yet";
+"CancelCollectionFail"  = "Cancel collection failed";
+"SetupFailed"           = "Setting failed";
+"ChemicalProperty"      = "Chemical property";
+"SetCommon"      = "Set as commonly used";
+"CancelCommon"   = "Cancel as commonly used";
+"FastSearch"     = "Fast search";
+
+
+// 画板引导页 GuideView
+"LongPressTriangle" = "Press on the function with triangle, there will be more choices ";
+"OnceContinue"      = "Single continuous fast switching";
+"SetCommonEle"      = "Set commonly used elements";
+"ColorSelect"       = "Color selector";
+"MenuHandle"        = "Menu stowage and sliding";
+"Substituent"       = "Substituted group";
+"CleanUp"           = "Clean Up";
+"Skip"              = "Skip";
+"LongPressTriangleDesc" = "In the process of drawing the chemical structure, we will use a lot of chemical bonds. Press the function with the triangle will expand more chemical bonds, and choose the chemical bond we want to use.";
+"OnceContinueDesc"      = "Single operation is convenient for moving operations, continuous operation can quickly perform the same operation";
+"SetCommonEleDesc"      = "In order to improve the efficiency, when drawing the chemical structure formula, we have added the commonly used elements from the element table which will be displayed in the artboard, and can be quickly selected.";
+"ColorSelectDesc"       = "In order to better distinguish and enhance the aesthetics when drawing the chemical structure, the color selector of the element is introduced.";
+"MenuHandleDesc"        = "In the mobile phone side, in order to give the user more space to draw, the function of menu hiding and sliding menu is added.";
+"SubstituentDesc"       = "The software has built-in common substituents, and can be freely configured with new substituents to improve the efficiency of structural drawing.";
+"StandardManage"        = "The function will automatically adjust the structure to a more regular state.";
+// 格式说明 GExportViewController
+"FormatDesc"       =   "Format specification";
+"DrawStruction"    =   "Please draw the structure!";
+"InputName"    =   "Please enter a name!";
+"SaveFail"     =   "Saving failed";
+"SaveFail!"    =   "Saving failed!";
+"SaveAlert"    =   "This substituent already exists. Please save after modification!";
+"EditSuccess!"     = "Title editing succeeded!";
+"EditFail"         = "Title editing failed";
+"FileNameExist"    = "The file name already exists";
+"ExitAndNotSave?"  = "Customized substitute is not saved yet, exit without saving?";
+"Exit"             = "Exit";
+"ToSave"           = "Go and save";
+"SaveExit"         = "Save and exit";
+"Loading..."       = "Loading";
+"Loading"          = "Loading";
+"KingFormExplain"     = "‘king’ is a special format for KingDraw, which can meet more drawing requirements, but only supports KingDraw. Click on the format description to view the details.";
+"MolV2000FormExplain" = "The ‘mol’ file format is stored in the M2000 Molfile standard protocol V2000 protocol and is compatible with other mainstream editors. However, the King file will be partially lost. Click on the format description to view the details.";
+"MolV3000FormExplain" = "The ‘mol V3000’ file format is stored in the MDL Molfile V3000 protocol and is compatible with other major editors. However, some of the King files will be lost. Click on the format description to view the details.";
+"CdxFormExplain"      = "‘cdx’ is a ChemDraw-specific format that is compatible with Chemdraw, but some of the King files will be lost. Click on the format description to view the details.";
+"InputFile"           = "Please enter a file name";
+"MaxInput50"          = "Enter up to 50 characters";
+
+
+// 登录注册 - LoginContentView、清笔图片
+"PhoneLogin"     =  "Please use phone number to login";
+"CountryOrRegion"=  "Country or region";  //国家列表翻译
+"InputPhone"     =  "Please enter phone number";
+"Next"           =  "Next";
+"InputPassword"  =  "Please enter cell phone password";
+"PasswordPlaceholder"=  "Please enter 6-16 digit password.";
+"ForgetPassword?"    =  "Forget the password?";
+"ForgetPassword"     =  "Forget the password";
+// 选择国家和地区 GSelectContryViewController
+"SelectCountryOrRegion" = "Select country or region";
+"EnterNameOrCode"       = "Please enter country/region name or code";  //英文翻译时，是否「中文名->英文名」
+"NoResult"              = "No result";
+
+// GloginActionView / LoginContentView / GLoginAlertView
+"Reacquire"          = "Reacquire";
+"PhoneNum"           = "Cell phone number";
+"Accept"             = "Accept";
+"NotAccept"          = "Not accept";
+"Protocol"           = "Agreement";
+"Privacy"            = "Privacy";
+"<UserService>"      = "User Service Agreement";
+"<PrivacyPolicy>"    = "Privacy Policy";
+"China"              = "China";
+"RetrievePassword"   = "Retrieve password";
+"MobileVerifyCode"   = "Cell phone verification code";
+"Set6To16Password"   = "Set 6-16 digit password";
+"PhoneFirstLogin"    = "The phone number is not registered. It is the first time you log in to the system. Please enter the SMS verification code and complete the operation.";
+"FillPhoneNum"       = "Please fill in your phone number";
+"Wait..."            = "Please wait";
+"PhoneFormatError!"  = "The phone number is in the wrong format!";
+"PasswordFormatError!"  = "Wrong password format";
+"Login..."              = "Logging";
+"VerifyCodeError"       = "Wrong verification code";
+"PasswordFormatError"   = "Wrong password format";
+"PhoneNumError"         = "Wrong cell phone number";
+"TryAgain"              = "Try again";
+"PasswordEnteredErrorHandle" = "The password is entered incorrectly, you can do the following";
+
+// 软件设置  SetViewController
+"BondSet"           = "Chemical bond setup";
+"BondAngle"         = "Chemical bond angle";
+"BondLength"        = "Fixed bond length";
+"Verify"            = "Proof";
+"VerifySet"         = "Proof setup";
+"UpdateFail"        = "Update failed";
+"BondAngleRange"    = "Chemical bond angle (Interval sets: 60°-300°)";
+"AngleRange"        = "(Interval sets: 60°-300°)";
+"BondLengthRange"   = "Fixed bond length (Interval sets: 0.78cm-2cm)";
+"LengthRange"       = "(Interval sets: 0.78cm-2cm)";
+"HandleVerifyAction"= "Turns on or off the correct check function for the drawn structure";
+"Reset"             = "Re-set";
+"ResetFail"         = "Reset update failed";
+
+
+// 意见反馈 OpinionFeedbackController
+"TellUsFeedback"      = "If you have any problems in use or would like to make suggestions to us, let us know!";
+"RemainContact"       = "Please leave your contact information: mobile phone, WeChat, QQ";
+"SubmitFeedback"      = "Submit feedback";
+"ContactUs"           = "Contact us";
+"Submit500Letter"     = "Submit comments up to 500 characters";
+"ContactTwentyLetter" = "Contact information up to 20 characters";
+"FillFeedback"        = "Please fill in the feedback";
+"ReceiveFeedback"     = "We have received your comments, thank you for your support!";
+"Good"                = "OK";
+"Uploading..."        = "Uploading";
+
+// 关于我们 AboutUsViewController
+"BestEditor"    = "What we have to do is to make KingDraw the world's best mobile-end chemical structure editor";
+#warning mark 青岛清原精准农业科技有限公司\n版权所有  Copyright © 2018  翻译后换行符怎么处理？
+"Copyright"     = "Qingdao KingAgroot Precision Agriculture Technology Co., Ltd. All rights reserved.  Copyright © 2018
+";
+"NewAction"     = "New features";
+"Help"          = "Using help";
+"UserService"   = "User service agreement";
+"PrivacyPolicy" = "Privacy policy";
+
+// 修改密码 ChangePasswordController
+"OldPError"       = "The old password you entered is incorrect!";
+"NewPError"       = "The new password you entered is not in the correct format!";
+"PNoSame"         = "Inconsistent new password!";
+"AgainLogin"      = "Re-login";
+"Alert"           = "Hint";
+"PasswordSuccess" = "The password is successfully modified and automatically jumps to the login page for you.";
+
+// 拷贝到ChangePasswordController.xib
+"2gX-fD-BLh.normalTitle" = "Confirm";
+"4GA-nc-nKG.placeholder" = "Please enter the 6-16 digit password again";
+"4vM-8W-grg.text"        = "Confirm password";
+"At2-mz-gbh.text"        = "Old password";
+"Jry-sN-u7p.placeholder" = "Please enter the new 6-16 digit password";
+"TAj-en-ss9.placeholder" = "Please enter the old password";
+"yya-Bp-91g.text"        = "New password";
+
+// 侧滑列表 SidebarController
+"ExitLogin?" = "Are you sure you want to sign out?";
+
+// 联系我们 ContactUsChildView
+"Tel:"              = "Telephone";
+"Email:"            = "E-mail";
+"FollowWx"          = "Please follow Wechat official account";
+"SaveQRAttention"   = "Save the QR code to your phone, open WeChat, select Sweep, select the QR code from the album, and follow the “KingDraw Structure Editor”.";
+"FollowWb"          = "Please follow official micro-blog";
+"SearchWbAttention" = "Search for “KingDraw 清笔” in www.weibo.com or Weibo phone terminal. Click to follow.";
+"FollowPost"        = "Please follow official post-bar";
+"SearchBdAttention" = "Search for “KingDraw post bar” in www.baidu.com or Baidu phone terminal. Click to follow.";
+"JoinGroup"         = "Join communication group";
+"SearchQQJoin"      = "Search for “709524531” group in QQ from phone or PC. Click to follow and wait for the administrator to agree.";
+"OtherContact"      = "Other contacts";
+"KD-Editor"         = "KingDraw chemical structure editor";
+"KD-Pen"            = "KingDraw清笔";
+"KD-Post"           = "KingDraw Baidu post bar";
+"CopyToClipboard"   = "Has been copied to the clipboard";
+
+// 占位图 PromptNODataView
+"GoNewPalette" = "Don't have a drawing board yet, go to the new drawing board.";
+"NewPalette"   = "New drawing board";
+"CloudNoData"  = "There is no data in the cloud.\n Please press and upload in the local file list.";
+"LongPress"    = "Press";
+"NoData"       = "No data";
+"TempNoData"   = "No data";
+"TempNoTag"    = "No tag";
+"AddTag"       = "New tag";
+"TempNoAddGroup"= "Group file has not been added";
+// "未找到与...匹配的内容";
+"NotFound"     = "No matches found for";
+"MatchContent" = "";
+
+// 接口
+"NetworkFail"          = "The network connection is failed!";
+"NetworkLinkFail"      = "The network connection is failed";
+"NoNetworkLinkSoCheck!"= "No internet connection! Please check the network connection status of your device!";
+"GetError"             = "Wrong acquisition";
+"PleaseAgainLogin"     = "Please login again";

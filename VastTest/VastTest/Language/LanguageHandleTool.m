@@ -17,17 +17,22 @@
  [IOS开发之国际化localization多语言支持](http://www.hudongdong.com/ios/393.html#menu_index_4)
  */
 
-#warning mark ==需要加本地存储 Language==
 + (NSString *)getLanguage {
     NSArray *languages = [[NSUserDefaults standardUserDefaults] valueForKey:Apple_Languages];
-    NSString *currentLanguage = languages.firstObject;
+    NSString *localLanguage = [[NSUserDefaults standardUserDefaults] valueForKey:Save_Local_Language];
+    NSString *currentLanguage;
+    if (localLanguage && localLanguage.length) {
+        currentLanguage = localLanguage;
+    } else {
+        currentLanguage = languages.firstObject;
+    }
     return currentLanguage;
 }
-
 + (void)setLocalLanguage:(NSString *)language {
     
     [NSBundle setLanguage:language];
     [[NSUserDefaults standardUserDefaults] setValue:@[language] forKey:Apple_Languages];
+    [[NSUserDefaults standardUserDefaults] setObject:language forKey:Save_Local_Language];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 

@@ -1,3 +1,409 @@
 "弹框页面"     = "弹框页面";
 "登录页面MVVM" = "登录页面MVVM";
 "设置语言"     = "设置语言";
+/*
+ Localizable.strings
+ KingDraw
+ 
+ Created by GoodSrc on 2018/9/10.
+ Copyright © 2018年 Mask. All rights reserved.
+ */
+
+// 接口中添加字段 [dict setValue:@"行业类别" forKey:@"configType"];
+// GHttpDefine.h 接口中「中文」
+// ChemicalBondsCell / ManyKeySelectView 键
+// 版本更新 UpDataAlertView
+"ThisUpdate"      = "本次更新内容:";
+"AddTagAction"    = "新增标签功能，为文件添加标签，方便文件管理。";
+"AddSearchAction" = "新增子结构搜索功能，快速找到您想要的！";
+"NewVersionIntro" = "新版本介绍";
+"IKnow"           = "我知道了";
+
+// 首页配置
+"ConfigFileWait" = "正在部署配置文件，请稍后！";
+"ConfigDeployed" = "配置已部署！";
+"UpdateDateWait" = "正在更新数据，请稍后！";
+"UpdateComplete" = "更新完成！";
+
+"Delete"      = "删除";
+"Cancel"      = "取消";
+"Confirm"     = "确定";
+"Complete"    = "完成";
+"Share"       = "分享";
+"ShareSuccess"= "分享成功";
+"Warning"     = "警告";
+"GoSettingOpenSwitch" = "请去- > [设置 - 隐私 - 相册] 打开访问开关";
+"GoSetting"   = "去设置";
+"Saving"      = "正在保存";
+"SaveToAlbum" = "已保存到相册";
+
+
+"Login"      =   "登录";
+"Register"   = "注册";
+"MyFile"     =   "我的文件";
+"AppSet"     =   "软件设置";
+"SynList"    =   "同步列表";
+"Feedback"   =   "意见反馈";
+"AboutUs"    =   "关于我们";
+"Password"   =   "修改密码";
+
+
+// 完善资料 UserInfoViewController
+"PerfectInfo"       = "完善资料";
+"PersonalInfo"      = "个人资料";
+"PhoneNum"          = "手机号码";
+"Email"             = "电子邮箱";
+"IndustryCategory"  = "行业类别";
+"EnterEmailAddress" = "请输入您的电子邮箱地址";
+"PleaseSelect"      = "请选择";
+"AcquisitionFailed" = "获取失败";
+"EnterVaildEmail"   = "请输入正确的邮箱";
+
+
+// 我的文件 - 本地
+"Local"       = "本地";
+"Cloud"       = "云端";
+"Upload"      = "上传";
+"Download"    = "下载";
+"UploadFail"  = "上传失败";
+"WaitUpload"  = "等待上传";
+"WaitDownload"= "等待下载";
+"Search"      = "检索";
+"Preview"     = "预览模式";
+"List"        = "列表模式";
+"Batch"       = "批量操作";
+"UTCloud"     = "上传到云端";
+"SelectUploadFile"    = "请选择需要上传的文件！";
+"GetUploadFileWait"   = "正在获取需要上传的文件，请稍后！";
+"SelectDeleteFile"    = "请选择需要删除的文件！";
+"LocalDbDeleteFail"   = "本地数据库删除失败";
+"FileUploadingWait"   = "文件正在上传，请稍后！";
+"FileUploadFailReset" = "文件上传失败，请在同步列表中重新上传！";
+// 首页列表操作 BottomOperationView
+"CheckAll"    = "全选";
+"Selected"    = "已选";
+"Number"      = "个";
+"DeletingFile!"  = "正在删除文件，请稍后！";
+//"您确认删除...等...个文件吗？删除确认后将无法找回！";
+"ConfirmDelete?" = "您确认删除";
+"SoOn" = "等";
+"DeleteConfirm!" = "个文件吗？删除确认后将无法找回！";
+"DeleteSuccess!" = "删除成功！";
+"SaveAlbum"   = "保存到相册";
+"SaveAs"      = "另存为";
+"ShareFile"   = "分享文件";
+"ShareingFile"= "分享文件中";
+"FileAttrib"  = "文件属性";
+"Rename"      = "重命名";
+"Copy"        = "复制";
+"ExportSuccess" = "导出成功";
+// 您确认将本地文件“%@”上传到云端吗？
+"ConfirmLocalFile" = "您确认将本地文件";
+"UploadCloud?"     = "上传到云端吗？";
+"UploadMiddle..."  = "上传中...";
+"UploadSuccess"    = "上传成功";
+"UploadFail"       = "上传失败";
+"Replace"          = "替换";
+"ReplaceSuccess"   = "替换成功";
+"ReplaceFail"      = "替换失败";
+"KeepBoth"         = "保留二者";
+"FileNoExist"      = "文件不存在";
+"FileExist"        = "文件已存在";
+"FileWriteFail"    = "文件写入失败";
+// "本地文件“...”与云端文件“...”标识相同，“替换”后会覆盖云端文件，“保留二者”后会自动重命名并上传云端。"
+"LocalFile"        = "本地文件";
+"AndCloudFile"     = "与云端文件";
+"CompareLocalAndCloudFile" = "标识相同，“替换”后会覆盖云端文件，“保留二者”后会自动重命名并上传云端。";
+// 文件属性 FileInfoController
+"FileName"    = "文件名称";
+"Struction"   = "结构式";
+"Size"        = "大小";
+"Format"      = "格式";
+"CreatTime"   = "创建时间";
+"ChangeTime"  = "修改时间";
+
+// 我的文件 - 云端
+"PCUrl"         =  "电脑端访问cloud.kingdraw.cn下载文件";  // 未找到
+"DownloadLocal" =  "下载到本地";
+"CloudSave"     =  "云端存储";
+"OpenCloudSave" =  "开启云端存储，手机号一键登录，从此存储数据不丢失";
+"NowLogin"      =  "现在登录";
+"NoLogin"       =  "暂不登录";
+"RenameSuccess" = "重命名成功";
+"RenameFail"    = "重命名失败";
+// 确认删除“%@”吗？删除确认后无法找回，谨慎选择！
+"ConfirmDel"          = "确认删除";
+"DeleteConfirmation!" = "吗？删除确认后无法找回，谨慎选择！";
+// 您确认将云端文件“%@”下载到本地吗？
+"ConfirmCloudFile"  = "您确认将云端文件";
+"DownloadLocal?"    = "下载到本地吗？";
+"Downloading..."    = "下载中...";
+"DownloadSuccess"   = "下载成功";
+"DownloadFail"      = "下载失败";
+"DownloadFail!"     = "下载失败！";
+// 云端文件“%@”与本地文件“%@”标识相同，“替换”后会覆盖本地文件，“保留二者”后会自动重命名并下载到本地。
+"CloudFile"         = "云端文件";
+"AndLocalFile"      = "与本地文件";
+"CompareCloudAndLocalFile" = "标识相同，“替换”后会覆盖本地文件，“保留二者”后会自动重命名并下载到本地。";
+"FileDownloadFail"    = "文件下载失败，请在同步列表中重新下载！";
+"FileDownloading"     = "文件正在下载，请稍后！";
+"SelectDownloadFile"  = "请选择需要下载的文件！";
+"GetNeedDeleteFile"   = "正在获取需要删除的文件，请稍后！";
+"GetNeedDownloadFile" = "正在获取需要下载的文件，请稍后！";
+// SynchronizationListController
+// "与服务器链接中断文件“%@”下载失败，请重新操作。"
+"ServerLinkInterrupt" = "与服务器链接中断文件";
+"DownloadFailReset."  = "下载失败，请重新操作。";
+"AgainDownload"       = "重新下载";
+"CancelDownload"      = "取消下载";
+"ProgressLater"       = "稍后处理";
+// "与服务器链接中断文件“%@”上传失败，请重新操作。"
+"UploadFailTryAgain"  = "上传失败，请重新操作。";
+"ResetUpload"         = "重新上传";
+"CancelUpload"        = "取消上传";
+
+
+
+
+// 分组标签
+"TagGroup"     = "分组标签";
+"TagManage"    = "标签管理";
+"Edit"         = "编辑";
+"TagEdit"      = "编辑标签";
+"TagAdd"       = "新增标签";
+"InputTagName" = "请输入标签名称！";
+"TenChinese"   = "中文最多10个汉字！";
+"TwentyLetter" = "英文最多20个字符！";
+"TagSaving"    = "正在保存标签";
+"SaveSuccess"  = "保存成功！";
+"TagExist"     = "标签已存在！";
+"Prompt"       = "温馨提示";  // 全局搜索一下
+"DeleteTag?"   = "确定要删除此分组标签？";
+"Deleting"     = "正在删除中";
+"NotSave"      = "该标签尚未保存!";
+"DeleteSuccess"= "删除成功";
+"DeleteFail"   = "删除失败";
+"SaveChange?"  = "是否保存本次修改？";
+"NoSave"       = "不保存";
+"Save"         = "保存";
+"TagName"            = "标签名称";
+"TagNameLimitLength" = "中文最多10个汉字, 英文最多20个字符";
+"SectionFile"        = "分组文件";
+"Addition"           = "添加";
+"SelectedTag"        = "已选标签";
+"MoreTag"            = "更多标签";
+"AddFilterTag"       = "添加筛选标签";
+"AddManageTag"       = "添加管理标签";
+"SearchHistory"            = "搜索历史";
+"ClearSearchHistory"       = "您确定要清空搜索记录吗？";
+"EnterFileNameToSearch"    = "输入文件名进行搜索";
+"EnterSearchContent"       = "请输入搜索内容";
+"SubstructureSearch"       = "    子结构式搜索";
+"NoAddGroupTag"            = "尚未添加分组标签";
+"DeleteTag"      = "删除标签";
+"AddGroupFile"   = "新增分组文件";
+
+
+// 画板
+"Unnamed"      =  "未命名";
+"Once"         =  "单次";
+"Continue"     =  "连续";
+"DrawContent"  = "请先绘制内容";
+"Saveing!"     = "正在保存！请稍后！";
+"PeriodicTableRemark"    = "注:长按某元素可自动加入到常用列表";
+"RemoveClickSubstituent" = "是否删除点击的取代基";
+"CommonGroup"            = "常用基团";
+// TopBarView
+"Topping"        = "置顶";
+"SetEnd"         = "置底";
+"PaletteNoEle"   = "画板上无任何化学元素";
+"CopySuccess"    = "复制成功";
+"CopyFail"       = "复制失败";
+"TitleNoEmpty"   = "标题不可为空";
+"SaveAsSuccess!" = "另存成功！";
+"SaveAsFail"     = "另存失败";
+"ShareToOthers"  = "分享给他人";
+"SaveAndShare"   = "保存并分享";
+"ClearHistory"   = "清空历史记录";
+"NoHistory"      = "暂无历史记录";
+"CancelCollectionFail"  = "取消收藏失败";
+"SetupFailed"           = "设置失败";
+"ChemicalProperty"      = "化学属性";
+"SetCommon"      = "设为常用";
+"CancelCommon"   = "取消常用";
+"FastSearch"     = "快速搜索";
+
+
+// 画板引导页 GuideView
+"LongPressTriangle" = "长按带有三角号的功能，会有更多选择";
+"OnceContinue"      = "单次连续快速切换";
+"SetCommonEle"      = "设置常用元素";
+"ColorSelect"       = "颜色选择器";
+"MenuHandle"        = "菜单的收起与滑动";
+"Substituent"       = "取代基";
+"CleanUp"           = "Clean Up";
+"Skip"              = "跳过";
+"LongPressTriangleDesc" = "在绘制化学结构式的过程中我们会用到很多化学键，长按带有三角号的功能会展开更多化学键，选择我们要使用的化学键即可";
+"OnceContinueDesc"      = "单次操作方便移动等操作，连续操作能快速的进行相同的操作";
+"SetCommonEleDesc"      = "在绘制化学结构式时，为了提高效率，我们增加了从元素周表中设置常用的元素，在画板中显示，并快速选取";
+"ColorSelectDesc"       = "在绘制化学结构式时为了更好的区分及提升美观性引入了元素的颜色选择器";
+"MenuHandleDesc"        = "在手机端中为了给用户更大的绘制空间，增加了菜单隐藏和滑动菜单的功能";
+"SubstituentDesc"       = "软件内置了常用的取代基，并可自由配置新建取代基，为结构式绘制提升效率";
+"StandardManage"        = "功能会自动将结构式调整成为一种比较规整的状态";
+// 格式说明 GExportViewController
+"FormatDesc"   =  "格式说明";
+"DrawStruction"= "请绘制结构式！";
+"InputName"    = "请输入名称！";
+"SaveFail"     = "保存失败";
+"SaveFail!"    = "保存失败！";
+"SaveAlert"    = "该取代基已存在，请修改后继续保存！";
+"EditSuccess!"     = "编辑标题成功！";
+"EditFail"         = "编辑标题失败";
+"FileNameExist"    = "文件名已存在";
+"ExitAndNotSave?"  = "自定义取代基暂未保存, 是否退出不保存?";
+"Exit"             = "退出";
+"ToSave"           = "去保存";
+"SaveExit"         = "保存并退出";
+"Loading..."       = "加载中...";
+"Loading"          = "加载中";
+"KingFormExplain"     = "‘king’是KingDraw专用格式，可以满足更多的绘图要求，但只支持KingDraw，点击格式说明，查看详情。";
+"MolV2000FormExplain" = "‘mol’文件格式，  采用MDL Molfile标准协议V2000协议存储，兼容其他主流编辑器，但是对King文件的保存会有部分丢失，点击格式说明，查看详情。";
+"MolV3000FormExplain" = "‘mol V3000’文件格式，采用MDL Molfile V3000协议存储，兼容其他主流编辑器，但是对King文件的保存会有部分丢失，点击格式说明，查看详情。";
+"CdxFormExplain"      = "‘cdx’是ChemDraw专用格式，兼容chemdraw, 但是对King文件的保存会有部分丢失，点击格式说明，查看详情。";
+"InputFile"           = "请输入文件名称";
+"MaxInput50"          = "最多输入50个字符";
+
+
+// 登录注册 - LoginContentView、清笔图片
+"PhoneLogin"     =  "使用手机号登录";
+"CountryOrRegion"=  "国家或地区";  //国家列表翻译
+"InputPhone"     =  "请输入手机号";
+"Next"           =  "下一步";
+"InputPassword"  =  "输入手机密码";
+"PasswordPlaceholder"=  "请输入6-16位密码";
+"ForgetPassword?"    =  "忘记密码?";
+"ForgetPassword"     =  "忘记密码";
+// 选择国家和地区 GSelectContryViewController
+"SelectCountryOrRegion" = "选择国家或地区";
+"EnterNameOrCode"       = "请输入国家/地区中文名或代码";  //英文翻译时，是否「中文名->英文名」
+"NoResult"              = "无结果";
+
+// GloginActionView / LoginContentView / GLoginAlertView
+"Reacquire"          = "重新获取";
+"PhoneNum"           = "手机号";
+"Accept"             = "接受";
+"NotAccept"          = "不接受";
+"Protocol"           = "协议";
+"Privacy"            = "隐私";
+"<UserService>"      = "《用户服务协议》";
+"<PrivacyPolicy>"    = "《隐私政策》";
+"China"              = "中国";
+"RetrievePassword"   = "找回密码";
+"MobileVerifyCode"   = "手机验证码";
+"Set6To16Password"   = "设置6-16位密码";
+"PhoneFirstLogin"    = "该手机号并未注册，是第一次登录系统，请输入短信验证码并完成操作。";
+"FillPhoneNum"       = "请填写手机号";
+"Wait..."            = "请稍后...";
+"PhoneFormatError!"  = "电话号码格式错误!";
+"PasswordFormatError!"  = "密码格式错误!";
+"Login..."              = "正在登录...";
+"VerifyCodeError"       = "验证码错误";
+"PasswordFormatError"   = "密码格式错误";
+"PhoneNumError"         = "手机号码错误";
+"TryAgain"              = "再试一次";
+"PasswordEnteredErrorHandle" = "密码输入错误，您可以进行以下操作";
+
+// 软件设置  SetViewController
+"BondSet"           = "化学键设置";
+"BondAngle"         = "化学键键角";
+"BondLength"        = "固定键长";
+"Verify"            = "校验";
+"VerifySet"         = "校验设置";
+"UpdateFail"        = "更新失败";
+"BondAngleRange"    = "化学键角 (设置区间：60°~300°)";
+"AngleRange"        = "(设置区间：60°~300°)";
+"BondLengthRange"   = "固定键长 (设置区间：0.78cm~2cm)";
+"LengthRange"       = "(设置区间：0.78cm~2cm)";
+"HandleVerifyAction"= "开启或关闭对已绘制结构式的正误校验功能";
+"Reset"             = "重置";
+"ResetFail"         = "重置更新失败";
+
+
+// 意见反馈 OpinionFeedbackController
+"TellUsFeedback"      = "如有在使用中遇到一些问题或想对我们提出建议，快来告诉我们吧！";
+"RemainContact"       = "请留下您的联系方式：手机、 微信、QQ";
+"SubmitFeedback"      = "提交反馈";
+"ContactUs"           = "联系我们";
+"Submit500Letter"     = "提交意见最多输入500个字符";
+"ContactTwentyLetter" = "联系方式最多输入20个字符";
+"FillFeedback"        = "请填写意见反馈";
+"ReceiveFeedback"     = "您的意见我们已收到，感谢您的支持！";
+"Good"                = "好的";
+"Uploading..."        = "正在上传...";
+
+// 关于我们 AboutUsViewController
+"BestEditor"    = "我们要做的是将KingDraw打造成为全世界最好用的移动端化学结构式编辑器";
+"Copyright"     = "青岛清原精准农业科技有限公司\n版权所有  Copyright © 2018";
+"NewAction"     = "新功能介绍";
+"Help"          = "使用帮助";
+"UserService"   = "用户服务协议";
+"PrivacyPolicy" = "隐私政策";
+
+// 修改密码 ChangePasswordController
+"OldPError"       = "您输入的旧密码不正确！";
+"NewPError"       = "您输入的新密码格式不正确！";
+"PNoSame"         = "新密码不一致！";
+"AgainLogin"      = "重新登录";
+"Alert"           = "提示";
+"PasswordSuccess" = "密码修改成功，自动为您跳转到登录页面";
+
+// 拷贝到ChangePasswordController.xib
+"2gX-fD-BLh.normalTitle" = "确定";
+"4GA-nc-nKG.placeholder" = "请再次输入6~16位密码";
+"4vM-8W-grg.text"        = "确认密码";
+"At2-mz-gbh.text"        = "旧密码";
+"Jry-sN-u7p.placeholder" = "请输入新的6~16位密码";
+"TAj-en-ss9.placeholder" = "请输入旧密码";
+"yya-Bp-91g.text"        = "新密码";
+
+// 侧滑列表 SidebarController
+"ExitLogin?" = "您确定要退出登录吗？";
+
+// 联系我们 ContactUsChildView
+"Tel:"              = "固定电话：";
+"Email:"            = "邮箱地址：";
+"FollowWx"          = "关注微信公众号";
+"SaveQRAttention"   = "保存二维码到手机中，打开微信，选择扫一扫，从相册中选择二维码，并关注‘KingDraw结构式编辑器’。";
+"FollowWb"          = "关注官方微博";
+"SearchWbAttention" = "在www.weibo.com或微博手机端中搜索‘KingDraw清笔’点击关注即可。";
+"FollowPost"        = "关注官方贴吧";
+"SearchBdAttention" = "在www.baidu.com或百度手机端中搜索‘KingDraw吧’进入后点击关注即可。";
+"JoinGroup"         = "加入沟通交流群";
+"SearchQQJoin"      = "在QQ手机端或PC端中搜索群号‘709524531’点击加入后等待管理员同意即可。";
+"OtherContact"      = "其他联系方式";
+"KD-Editor"         = "KingDraw结构式编辑器";
+"KD-Pen"            = "KingDraw清笔";
+"KD-Post"           = "KingDraw吧";
+"CopyToClipboard"   = "已复制到剪切板";
+
+// 占位图 PromptNODataView
+"GoNewPalette" = "还没有画板，赶快去新建画板";
+"NewPalette"   = "新建画板";
+"CloudNoData"  = "云端暂无数据\n请在本地文件列表长按上传";
+"LongPress"    = "长按";
+"NoData"       = "无数据";
+"TempNoData"   = "暂无数据";
+"TempNoTag"    = "暂无标签";
+"AddTag"       = "新建标签";
+"TempNoAddGroup"= "尚未添加分组文件";
+// "未找到与...匹配的内容";
+"NotFound"     = "未找到与";
+"MatchContent" = "匹配的内容";
+
+// 接口
+"NetworkFail"          = "网络连接失败！";
+"NetworkLinkFail"      = "网络连接失败";
+"NoNetworkLinkSoCheck!"= "无网络连接！请检查设备网络连接状态！";
+"GetError"             = "获取错误";
+"PleaseAgainLogin"     = "请重新登录";
+
