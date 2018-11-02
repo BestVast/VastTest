@@ -17,6 +17,10 @@
  [IOS开发之国际化localization多语言支持](http://www.hudongdong.com/ios/393.html#menu_index_4)
  */
 
+/**
+ * 注意:
+ * 中英文翻译的strings文件中，不能出现#注释，如果出现，则#后的翻译都不会显示
+ */
 + (NSString *)getLanguage {
     NSArray *languages = [[NSUserDefaults standardUserDefaults] valueForKey:Apple_Languages];
     NSString *localLanguage = [[NSUserDefaults standardUserDefaults] valueForKey:Save_Local_Language];

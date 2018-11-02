@@ -24,6 +24,7 @@
 #import "LanguageHandleTool.h"
 #import "KVCTestViewController.h"
 #import "AppStoreGradeViewController.h"
+#import "CodeArchiverViewController.h"
 @interface ViewController ()
 @property (nonatomic, strong) NSMutableArray *dataSource;
 @property (nonatomic, strong) VastTableViewProtocol *protocol;
@@ -45,7 +46,7 @@
     NSString *first = [LanguageHandleTool getStringForKey:@"登录页面MVVM" withTable:@""];
     NSString *second = [LanguageHandleTool getStringForKey:@"弹框页面" withTable:@""];
     
-    self.dataSource = [[NSMutableArray alloc] initWithArray:@[first, second, @"MenuViewAndUIStackView", @"Match", @"FMDB", @"Draw", @"RegularCollection", @"FlowCollection and 设置App语言", @"ClassifyLabelView", @"HorizontalCollection", @"KVC and 防止连续点击btn", @"ParseDocViewController", @"AppStoreGradeViewController"]];
+    self.dataSource = [[NSMutableArray alloc] initWithArray:@[first, second, @"MenuViewAndUIStackView", @"Match", @"FMDB", @"Draw", @"RegularCollection", @"FlowCollection and 设置App语言", @"ClassifyLabelView", @"HorizontalCollection", @"KVC and 防止连续点击btn", @"ParseDocViewController", @"AppStoreGradeViewController", @"测试解归档"]];
 }
 - (void)uiConfig {
     self.navigationItem.title = @"列表页面";
@@ -100,6 +101,8 @@
         className = @"ParseDocViewController";
     } else if ([indexName containsString:@"AppStoreGradeViewController"]) {
         className = @"AppStoreGradeViewController";
+    } else if ([indexName containsString:@"测试解归档"]) {
+        className = @"CodeArchiverViewController";
     }
     if (className && className.length) {
         Class class = NSClassFromString(className);
