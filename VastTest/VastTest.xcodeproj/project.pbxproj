@@ -136,6 +136,9 @@
 		FD5349DB216D8802007C0AA0 /* VastTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5349DA216D8802007C0AA0 /* VastTestUITests.m */; };
 		FD54A15A2147C3DD00B8C579 /* btnEnglish.png in Resources */ = {isa = PBXBuildFile; fileRef = FD54A1592147C3DD00B8C579 /* btnEnglish.png */; };
 		FD54A15B2147C3FF00B8C579 /* btn.png in Resources */ = {isa = PBXBuildFile; fileRef = FD54A15D2147C3FF00B8C579 /* btn.png */; };
+		FD56A03A21CB317200309F1E /* GpaletteView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD56A03721CB317200309F1E /* GpaletteView.m */; };
+		FD56A03B21CB317200309F1E /* GPieChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD56A03921CB317200309F1E /* GPieChartView.m */; };
+		FD56A03E21CB318F00309F1E /* GChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD56A03D21CB318F00309F1E /* GChartViewController.m */; };
 		FD5A769B2117DF3F00699CED /* VastAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5A769A2117DF3F00699CED /* VastAlertView.m */; };
 		FD5A769E21181D9C00699CED /* MenuLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5A769D21181D9C00699CED /* MenuLabelViewController.m */; };
 		FD5A76A2211824DF00699CED /* UIAlertController+supportedInterfaceOrientations.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5A76A1211824DF00699CED /* UIAlertController+supportedInterfaceOrientations.m */; };
@@ -444,6 +447,12 @@
 		FD54A1592147C3DD00B8C579 /* btnEnglish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnEnglish.png; sourceTree = "<group>"; };
 		FD54A15C2147C3FF00B8C579 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = en.lproj/btn.png; sourceTree = "<group>"; };
 		FD54A15E2147C44500B8C579 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "zh-Hans"; path = "zh-Hans.lproj/btn.png"; sourceTree = "<group>"; };
+		FD56A03621CB317200309F1E /* GpaletteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GpaletteView.h; sourceTree = "<group>"; };
+		FD56A03721CB317200309F1E /* GpaletteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GpaletteView.m; sourceTree = "<group>"; };
+		FD56A03821CB317200309F1E /* GPieChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPieChartView.h; sourceTree = "<group>"; };
+		FD56A03921CB317200309F1E /* GPieChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPieChartView.m; sourceTree = "<group>"; };
+		FD56A03C21CB318F00309F1E /* GChartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GChartViewController.h; sourceTree = "<group>"; };
+		FD56A03D21CB318F00309F1E /* GChartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GChartViewController.m; sourceTree = "<group>"; };
 		FD5A76992117DF3F00699CED /* VastAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VastAlertView.h; sourceTree = "<group>"; };
 		FD5A769A2117DF3F00699CED /* VastAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VastAlertView.m; sourceTree = "<group>"; };
 		FD5A769C21181D9C00699CED /* MenuLabelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuLabelViewController.h; sourceTree = "<group>"; };
@@ -758,6 +767,7 @@
 				FD1BF22B2106D59B001141AB /* Extension */,
 				FD1BF22A2106D58A001141AB /* Tools */,
 				FD1BF2232106D17D001141AB /* image */,
+				FD56A03521CB316000309F1E /* PieChart */,
 				FD1BF20B2106C385001141AB /* Main.storyboard */,
 				FD1BF20E2106C38B001141AB /* Assets.xcassets */,
 				FD1BF2102106C38B001141AB /* LaunchScreen.storyboard */,
@@ -1002,6 +1012,19 @@
 				FD5349DC216D8802007C0AA0 /* Info.plist */,
 			);
 			path = VastTestUITests;
+			sourceTree = "<group>";
+		};
+		FD56A03521CB316000309F1E /* PieChart */ = {
+			isa = PBXGroup;
+			children = (
+				FD56A03C21CB318F00309F1E /* GChartViewController.h */,
+				FD56A03D21CB318F00309F1E /* GChartViewController.m */,
+				FD56A03621CB317200309F1E /* GpaletteView.h */,
+				FD56A03721CB317200309F1E /* GpaletteView.m */,
+				FD56A03821CB317200309F1E /* GPieChartView.h */,
+				FD56A03921CB317200309F1E /* GPieChartView.m */,
+			);
+			path = PieChart;
 			sourceTree = "<group>";
 		};
 		FD5A769F21181FCC00699CED /* AppDelegate */ = {
@@ -1399,6 +1422,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD1BF20A2106C385001141AB /* ViewController.m in Sources */,
+				FD56A03E21CB318F00309F1E /* GChartViewController.m in Sources */,
 				FD1BF2152106C38B001141AB /* main.m in Sources */,
 				FD61AFD821422666006BC7AC /* FMDatabasePool.m in Sources */,
 				FD25931721105CE500014FC6 /* UIRefreshControl+AFNetworking.m in Sources */,
@@ -1418,6 +1442,7 @@
 				FD0119992175C45E00747AA9 /* UIScrollView+MJExtension.m in Sources */,
 				FD0119A02175C45E00747AA9 /* MJRefreshAutoNormalFooter.m in Sources */,
 				FD2C0A4B211299EB00ADAEC9 /* LoginViewModel.m in Sources */,
+				FD56A03B21CB317200309F1E /* GPieChartView.m in Sources */,
 				FD258EC72110530800014FC6 /* ListViewController.m in Sources */,
 				FD35375021800F2400C1BF93 /* UIImage+GIF.m in Sources */,
 				FD35375521800F2400C1BF93 /* SDWebImageDownloaderOperation.m in Sources */,
@@ -1482,6 +1507,7 @@
 				FD35375921800F2400C1BF93 /* UIButton+WebCache.m in Sources */,
 				FD81CBAB21772EAC00FACEDA /* UIButton+VastRepeatClick.m in Sources */,
 				FD35374A21800F2400C1BF93 /* UIImage+WebP.m in Sources */,
+				FD56A03A21CB317200309F1E /* GpaletteView.m in Sources */,
 				FD0119DF2175DF2300747AA9 /* MJPropertyKey.m in Sources */,
 				FD76F616217D9C98006D16E5 /* ParseDocViewController.m in Sources */,
 				FD25931F21105CE500014FC6 /* AFURLResponseSerialization.m in Sources */,
