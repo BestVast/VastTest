@@ -46,6 +46,7 @@
     //设置window的根控制器
 //    self.window.rootViewController = self.splitViewController;
     
+    // com.KingAgroot.KingDraw
     // com.goodsrc.PrecisionExperiment
     return YES;
 }

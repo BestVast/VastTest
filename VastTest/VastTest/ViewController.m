@@ -39,14 +39,14 @@
     [self dataConfig];
     //[正则表达式](https://www.jianshu.com/p/2b599fc55011)
     [self uiConfig];
-    
+        
 }
 
 - (void)dataConfig {
     NSString *first = [LanguageHandleTool getStringForKey:@"登录页面MVVM" withTable:@""];
     NSString *second = [LanguageHandleTool getStringForKey:@"弹框页面" withTable:@""];
     
-    self.dataSource = [[NSMutableArray alloc] initWithArray:@[first, second, @"MenuViewAndUIStackView", @"Match", @"FMDB", @"Draw", @"RegularCollection", @"FlowCollection and 设置App语言", @"ClassifyLabelView", @"HorizontalCollection", @"KVC and 防止连续点击btn", @"ParseDocViewController", @"AppStoreGradeViewController", @"测试解归档"]];
+    self.dataSource = [[NSMutableArray alloc] initWithArray:@[first, second, @"MenuViewAndUIStackView", @"Match", @"FMDB", @"Draw", @"RegularCollection", @"FlowCollection and 设置App语言", @"ClassifyLabelView", @"HorizontalCollection", @"KVC and 防止连续点击btn", @"ParseDocViewController", @"AppStoreGradeViewController", @"测试解归档", @"跳转设置", ]];
 }
 - (void)uiConfig {
     self.navigationItem.title = @"列表页面";
@@ -75,6 +75,30 @@
 - (void)selectCellCallback:(NSIndexPath *)indexPath {
     NSString *className;
     NSString *indexName = self.dataSource[indexPath.row];
+    if ([indexName containsString:@"跳转设置"]) {
+        // 亲测：iOS 8.1 ~ iOS11.4.1
+        // 跳转到设置 - 相机 / 该应用的设置界面
+        NSURL *url1 = [NSURL URLWithString:@"App-Prefs:root=MOBILE_DATA_SETTINGS_ID"];
+        // iOS10也可以使用url2访问，不过使用url1更好一些，可具体根据业务需求自行选择
+        NSURL *url2 = [NSURL URLWithString:UIApplicationOpenSettingsURLString];
+        if (@available(iOS 11.0, *)) {
+            if ([[UIApplication sharedApplication] canOpenURL:url2]){
+                [[UIApplication sharedApplication] openURL:url2 options:@{} completionHandler:nil];
+            }
+        } else {
+            if ([[UIApplication sharedApplication] canOpenURL:url1]){
+                if (@available(iOS 10.0, *)) {
+                    [[UIApplication sharedApplication] openURL:url1 options:@{} completionHandler:nil];
+                } else {
+                    [[UIApplication sharedApplication] openURL:url1];
+                }
+            }
+        }
+        
+//        作者：Metro追光者
+//        链接：https://www.jianshu.com/p/5fd0ac245e85
+        return;
+    }
     if (indexPath.row == 0) {
         className = @"LoginViewController";
     } else if (indexPath.row == 1) {
