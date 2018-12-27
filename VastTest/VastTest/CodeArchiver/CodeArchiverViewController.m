@@ -48,8 +48,8 @@
 - (void)uiConfig {
     self.navigationItem.title = @"解归档";
     // [https://www.jianshu.com/p/187681b031b1](简书: kvo修改tf的placeholder字体颜色字体大小)
-    [self.nameTf setValue:[UIColor yellowColor] forKeyPath:@"_placeholderLabel.textColor"];
-    [self.nameTf setValue:[UIFont boldSystemFontOfSize:20] forKeyPath:@"_placeholderLabel.font"];
+    [self.nameTf setValue:[UIColor redColor] forKeyPath:@"_placeholderLabel.textColor"];
+    [self.nameTf setValue:[UIFont boldSystemFontOfSize:12] forKeyPath:@"_placeholderLabel.font"];
 }
 - (void)dataConfig {
     NSData *data = [[NSUserDefaults standardUserDefaults] objectForKey:USER_INFO];
