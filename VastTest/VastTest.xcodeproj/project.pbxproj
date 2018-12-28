@@ -130,6 +130,7 @@
 		FD389E0521212350008CCA07 /* VastCatchCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = FD389E0421212350008CCA07 /* VastCatchCrash.m */; };
 		FD389E0B21217556008CCA07 /* FlowCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD389E0A21217556008CCA07 /* FlowCollectionViewController.m */; };
 		FD389E0E212180DD008CCA07 /* WaterFallsFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = FD389E0D212180DD008CCA07 /* WaterFallsFlowLayout.m */; };
+		FD3ECB2D21D6088D00A059E9 /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3ECB2C21D6088D00A059E9 /* ShareViewController.m */; };
 		FD467F2B21252BF500783C27 /* GTagLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD467F2A21252BF500783C27 /* GTagLayoutView.m */; };
 		FD467F2E212559E600783C27 /* GTagAddCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FD467F2D212559E600783C27 /* GTagAddCollectionViewCell.m */; };
 		FD5349CD216D87F4007C0AA0 /* VastTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5349CC216D87F4007C0AA0 /* VastTestTests.m */; };
@@ -431,6 +432,8 @@
 		FD389E0A21217556008CCA07 /* FlowCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlowCollectionViewController.m; sourceTree = "<group>"; };
 		FD389E0C212180DD008CCA07 /* WaterFallsFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaterFallsFlowLayout.h; sourceTree = "<group>"; };
 		FD389E0D212180DD008CCA07 /* WaterFallsFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaterFallsFlowLayout.m; sourceTree = "<group>"; };
+		FD3ECB2B21D6088D00A059E9 /* ShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
+		FD3ECB2C21D6088D00A059E9 /* ShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
 		FD467F2921252BF500783C27 /* GTagLayoutView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTagLayoutView.h; sourceTree = "<group>"; };
 		FD467F2A21252BF500783C27 /* GTagLayoutView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTagLayoutView.m; sourceTree = "<group>"; };
 		FD467F2C212559E600783C27 /* GTagAddCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTagAddCollectionViewCell.h; sourceTree = "<group>"; };
@@ -746,6 +749,7 @@
 				FD5A769F21181FCC00699CED /* AppDelegate */,
 				FD1BF2082106C385001141AB /* ViewController.h */,
 				FD1BF2092106C385001141AB /* ViewController.m */,
+				FD3ECB2A21D5ECC600A059E9 /* Share */,
 				FD6BD75E218C231600A6C855 /* CodeArchiver */,
 				FD6447A721815031001E674A /* Magnifier */,
 				FDA0A1CC2179AE65004AAB3C /* TableViewSeparate */,
@@ -994,6 +998,15 @@
 				FD35374921800F2400C1BF93 /* UIImage+GIF.h */,
 			);
 			path = SDWebImage;
+			sourceTree = "<group>";
+		};
+		FD3ECB2A21D5ECC600A059E9 /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				FD3ECB2B21D6088D00A059E9 /* ShareViewController.h */,
+				FD3ECB2C21D6088D00A059E9 /* ShareViewController.m */,
+			);
+			path = Share;
 			sourceTree = "<group>";
 		};
 		FD5349CB216D87F4007C0AA0 /* VastTestTests */ = {
@@ -1546,6 +1559,7 @@
 				FD35372621800F1600C1BF93 /* SVIndefiniteAnimatedView.m in Sources */,
 				FD6447AA2181504C001E674A /* VastMagnifierTool.m in Sources */,
 				FD25932321105CE500014FC6 /* AFNetworkReachabilityManager.m in Sources */,
+				FD3ECB2D21D6088D00A059E9 /* ShareViewController.m in Sources */,
 				FD0119A42175C45E00747AA9 /* MJRefreshFooter.m in Sources */,
 				FD1BF22F2106D706001141AB /* ShowViewController.m in Sources */,
 				FD389E0B21217556008CCA07 /* FlowCollectionViewController.m in Sources */,

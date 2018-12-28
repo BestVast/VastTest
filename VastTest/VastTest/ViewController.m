@@ -46,7 +46,7 @@
     NSString *first = [LanguageHandleTool getStringForKey:@"登录页面MVVM" withTable:@""];
     NSString *second = [LanguageHandleTool getStringForKey:@"弹框页面" withTable:@""];
     
-    self.dataSource = [[NSMutableArray alloc] initWithArray:@[first, second, @"MenuViewAndUIStackView", @"Match", @"FMDB", @"Draw", @"RegularCollection", @"FlowCollection and 设置App语言", @"ClassifyLabelView", @"HorizontalCollection", @"KVC and 防止连续点击btn", @"ParseDocViewController", @"AppStoreGradeViewController", @"测试解归档", @"跳转设置", @"画图与饼状图"]];
+    self.dataSource = [[NSMutableArray alloc] initWithArray:@[first, second, @"MenuViewAndUIStackView", @"Match", @"FMDB", @"Draw", @"RegularCollection", @"FlowCollection and 设置App语言", @"ClassifyLabelView", @"HorizontalCollection", @"KVC and 防止连续点击btn", @"ParseDocViewController", @"AppStoreGradeViewController", @"测试解归档", @"跳转设置", @"画图与饼状图", @"系统分享"]];
 }
 - (void)uiConfig {
     self.navigationItem.title = @"列表页面";
@@ -129,6 +129,8 @@
         className = @"CodeArchiverViewController";
     } else if ([indexName containsString:@"画图与饼状图"]) {
         className = @"GChartViewController";
+    } else if ([indexName containsString:@"系统分享"]) {
+        className = @"ShareViewController";
     }
     if (className && className.length) {
         Class class = NSClassFromString(className);
