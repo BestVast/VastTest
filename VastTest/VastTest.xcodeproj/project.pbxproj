@@ -131,6 +131,10 @@
 		FD389E0B21217556008CCA07 /* FlowCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD389E0A21217556008CCA07 /* FlowCollectionViewController.m */; };
 		FD389E0E212180DD008CCA07 /* WaterFallsFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = FD389E0D212180DD008CCA07 /* WaterFallsFlowLayout.m */; };
 		FD3ECB2D21D6088D00A059E9 /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3ECB2C21D6088D00A059E9 /* ShareViewController.m */; };
+		FD4059F9221AB34C0069A6DC /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4059F1221AB34C0069A6DC /* FirstViewController.m */; };
+		FD4059FA221AB34C0069A6DC /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4059F2221AB34C0069A6DC /* MasterViewController.m */; };
+		FD4059FB221AB34C0069A6DC /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4059F3221AB34C0069A6DC /* DetailsViewController.m */; };
+		FD4059FC221AB34C0069A6DC /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4059F5221AB34C0069A6DC /* SecondViewController.m */; };
 		FD467F2B21252BF500783C27 /* GTagLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD467F2A21252BF500783C27 /* GTagLayoutView.m */; };
 		FD467F2E212559E600783C27 /* GTagAddCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FD467F2D212559E600783C27 /* GTagAddCollectionViewCell.m */; };
 		FD5349CD216D87F4007C0AA0 /* VastTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5349CC216D87F4007C0AA0 /* VastTestTests.m */; };
@@ -171,7 +175,6 @@
 		FD865DAD213E256A0098A852 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = FD865DA2213E25690098A852 /* MASViewAttribute.m */; };
 		FD865DAE213E256A0098A852 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FD865DA3213E25690098A852 /* Info.plist */; };
 		FD97BC032111B5FC00A1500E /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD97BC022111B5FC00A1500E /* LoginViewController.m */; };
-		FDD1A01E217DC5D100FFD92A /* SplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD1A01D217DC5D100FFD92A /* SplitViewController.m */; };
 		FDD7F51A217460EC005AFB24 /* LanguageXibTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD7F519217460EC005AFB24 /* LanguageXibTestView.m */; };
 		FDD7F53221746CF1005AFB24 /* LanguageXibTestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDD7F53421746CF1005AFB24 /* LanguageXibTestView.xib */; };
 		FDD7F53E21747323005AFB24 /* NSBundle+Language.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD7F53D21747323005AFB24 /* NSBundle+Language.m */; };
@@ -434,6 +437,14 @@
 		FD389E0D212180DD008CCA07 /* WaterFallsFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaterFallsFlowLayout.m; sourceTree = "<group>"; };
 		FD3ECB2B21D6088D00A059E9 /* ShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
 		FD3ECB2C21D6088D00A059E9 /* ShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
+		FD4059F1221AB34C0069A6DC /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		FD4059F2221AB34C0069A6DC /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		FD4059F3221AB34C0069A6DC /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
+		FD4059F4221AB34C0069A6DC /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
+		FD4059F5221AB34C0069A6DC /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		FD4059F6221AB34C0069A6DC /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		FD4059F7221AB34C0069A6DC /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		FD4059F8221AB34C0069A6DC /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		FD467F2921252BF500783C27 /* GTagLayoutView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTagLayoutView.h; sourceTree = "<group>"; };
 		FD467F2A21252BF500783C27 /* GTagLayoutView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTagLayoutView.m; sourceTree = "<group>"; };
 		FD467F2C212559E600783C27 /* GTagAddCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTagAddCollectionViewCell.h; sourceTree = "<group>"; };
@@ -520,8 +531,6 @@
 		FD865DA3213E25690098A852 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD97BC012111B5FC00A1500E /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		FD97BC022111B5FC00A1500E /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		FDD1A01C217DC5D100FFD92A /* SplitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplitViewController.h; sourceTree = "<group>"; };
-		FDD1A01D217DC5D100FFD92A /* SplitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplitViewController.m; sourceTree = "<group>"; };
 		FDD7F518217460EC005AFB24 /* LanguageXibTestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LanguageXibTestView.h; sourceTree = "<group>"; };
 		FDD7F519217460EC005AFB24 /* LanguageXibTestView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LanguageXibTestView.m; sourceTree = "<group>"; };
 		FDD7F53321746CF1005AFB24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LanguageXibTestView.xib; sourceTree = "<group>"; };
@@ -1250,8 +1259,14 @@
 		FDD1A01B217DC5A400FFD92A /* SplitVc */ = {
 			isa = PBXGroup;
 			children = (
-				FDD1A01C217DC5D100FFD92A /* SplitViewController.h */,
-				FDD1A01D217DC5D100FFD92A /* SplitViewController.m */,
+				FD4059F4221AB34C0069A6DC /* DetailsViewController.h */,
+				FD4059F3221AB34C0069A6DC /* DetailsViewController.m */,
+				FD4059F8221AB34C0069A6DC /* FirstViewController.h */,
+				FD4059F1221AB34C0069A6DC /* FirstViewController.m */,
+				FD4059F6221AB34C0069A6DC /* MasterViewController.h */,
+				FD4059F2221AB34C0069A6DC /* MasterViewController.m */,
+				FD4059F7221AB34C0069A6DC /* SecondViewController.h */,
+				FD4059F5221AB34C0069A6DC /* SecondViewController.m */,
 			);
 			path = SplitVc;
 			sourceTree = "<group>";
@@ -1445,8 +1460,8 @@
 				FD01199D2175C45E00747AA9 /* MJRefreshBackNormalFooter.m in Sources */,
 				FD35375421800F2400C1BF93 /* SDImageCache.m in Sources */,
 				FD61AFC421422654006BC7AC /* FmdbHelper.m in Sources */,
-				FDD1A01E217DC5D100FFD92A /* SplitViewController.m in Sources */,
 				FD35375221800F2400C1BF93 /* SDWebImageCompat.m in Sources */,
+				FD4059FB221AB34C0069A6DC /* DetailsViewController.m in Sources */,
 				FD0119DC2175DF2300747AA9 /* NSObject+MJProperty.m in Sources */,
 				FD61AFD621422666006BC7AC /* FMDatabaseAdditions.m in Sources */,
 				FD25931621105CE500014FC6 /* UIProgressView+AFNetworking.m in Sources */,
@@ -1493,6 +1508,7 @@
 				FD35375721800F2400C1BF93 /* UIImageView+WebCache.m in Sources */,
 				FD01199A2175C45E00747AA9 /* UIView+MJExtension.m in Sources */,
 				FD35375321800F2400C1BF93 /* SDWebImagePrefetcher.m in Sources */,
+				FD4059FA221AB34C0069A6DC /* MasterViewController.m in Sources */,
 				FD0119B82175D29C00747AA9 /* CustomLoginInputView.m in Sources */,
 				FD01196821758A7700747AA9 /* KVCDog.m in Sources */,
 				FD1B755521227E53004A09C8 /* ClassifyLabelViewController.m in Sources */,
@@ -1507,11 +1523,13 @@
 				FD61AFD521422666006BC7AC /* FMDatabaseQueue.m in Sources */,
 				FD0119DA2175DF2300747AA9 /* NSObject+MJCoding.m in Sources */,
 				FDDA50C52133FA17004F3106 /* ShowNotifyAlertView.m in Sources */,
+				FD4059F9221AB34C0069A6DC /* FirstViewController.m in Sources */,
 				FD865DA4213E256A0098A852 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				FD2C0A4E211299F500ADAEC9 /* LoginModel.m in Sources */,
 				FD25932021105CE500014FC6 /* AFHTTPSessionManager.m in Sources */,
 				FD25931E21105CE500014FC6 /* AFImageDownloader.m in Sources */,
 				FD0119DD2175DF2300747AA9 /* NSObject+MJClass.m in Sources */,
+				FD4059FC221AB34C0069A6DC /* SecondViewController.m in Sources */,
 				FD25931A21105CE500014FC6 /* UIButton+AFNetworking.m in Sources */,
 				FD35374B21800F2400C1BF93 /* MKAnnotationView+WebCache.m in Sources */,
 				FD1B75582122806A004A09C8 /* LabelListView.m in Sources */,

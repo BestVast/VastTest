@@ -9,9 +9,17 @@
 #import "AppDelegate.h"
 #import "VastCatchCrash.h"
 #import "ViewController.h"
-#import "SplitViewController.h"
+
+#import "MasterViewController.h"
+#import "DetailsViewController.h"
+#import "FirstViewController.h"
+#import "SecondViewController.h"
+
 @interface AppDelegate ()<UISplitViewControllerDelegate>
-@property (strong,nonatomic)UISplitViewController *splitViewController; //声明分割控制器
+@property (nonatomic,strong) UINavigationController *navigationControllerDetails;
+@property (nonatomic,strong) UINavigationController *navigationControllerFirst;
+@property (nonatomic,strong) UINavigationController *navigationControllerSecond;
+@property (nonatomic, strong) UISplitViewController *spliteViewController;
 
 @end
 
@@ -27,31 +35,40 @@
     [[NSBundle bundleWithPath:@"/Applications/InjectionIII.app/Contents/Resources/iOSInjection.bundle"] load];
 #endif
     
-    //创建分割控制器
-    self.splitViewController = [[UISplitViewController alloc]init];
-    //创建MasterVC
-    ViewController *MasterVC = [[ViewController alloc]init];
-    //创建DetailVC
-    SplitViewController *DetailVC = [[SplitViewController alloc]init];
-    //创建左侧导航控制器
-    UINavigationController *MasterNavigationController = [[UINavigationController alloc]initWithRootViewController:MasterVC];
-    //创建右侧导航栏控制器
-    UINavigationController *DetailNavigationController = [[UINavigationController alloc]initWithRootViewController:DetailVC];
-    // 设置 UISplitViewController 所管理的左、右两个 UIViewController
-    self.splitViewController.viewControllers = @[MasterNavigationController, DetailNavigationController];
-    //设置分割控制器分割模式
-    self.splitViewController.preferredDisplayMode = UISplitViewControllerDisplayModeAllVisible;
-    //设置代理
-    self.splitViewController.delegate = self;
-    //设置window的根控制器
-//    self.window.rootViewController = self.splitViewController;
+    if (SCREEN_WIDTH > 414) {
+        [self setupSpliteViewController];
+    } else {
+        
+    }
     
     // com.KingAgroot.KingDraw
     // com.goodsrc.PrecisionExperiment
     return YES;
 }
 
-
+#pragma mark 设置SpliteViewController
+- (void)setupSpliteViewController
+{
+    //左侧主视图
+    MasterViewController *master = [MasterViewController new];
+    
+    //右侧默认视图
+    DetailsViewController *details = [DetailsViewController new];//刚进入应用默认显示的Controller
+    self.navigationControllerDetails = [[UINavigationController alloc]initWithRootViewController:details];
+    
+    FirstViewController *first = [FirstViewController new];
+    self.navigationControllerFirst = [[UINavigationController alloc]initWithRootViewController:first];
+    
+    SecondViewController *second = [SecondViewController new];
+    self.navigationControllerSecond = [[UINavigationController alloc]initWithRootViewController:second];
+    
+    self.spliteViewController = [[UISplitViewController alloc]init];
+    self.spliteViewController.viewControllers = @[master,self.navigationControllerDetails,self.navigationControllerFirst,self.navigationControllerSecond];
+    
+    self.spliteViewController.preferredDisplayMode = UISplitViewControllerDisplayModeAllVisible;//设置左侧主视图Master Controller的显示模式，现在是一直显示。如果设置为横屏显示竖屏不显示，还可以再设置一下相关的手势属性，如presentsWithGesture
+    self.spliteViewController.maximumPrimaryColumnWidth = 128.0f;//调整左侧主视图Master Controller的最大显示宽度
+    self.window.rootViewController = self.spliteViewController;
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
